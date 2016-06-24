@@ -1,0 +1,31 @@
+[
+    [],  ["gateway"],
+    
+    ["cheating", "suspicious_mime_types"],  ["general", "suspicious_mime_types"],
+    
+    ["log", "level"], ["general", "log", "log_level"],
+    ["log", "file"],  ["general", "log", "log_file"],
+    
+    ["dbpc", "host"],      ["general", "dbpc", "host"],
+    ["dbpc", "port"],      ["general", "dbpc", "port"],
+    ["dbpc", "port"],      ["general", "dbpc", "port"],
+    ["dbpc", "service"],   ["general", "dbpc", "service"],
+    ["dbpc", "interval"],  ["general", "dbpc", "heart_beat_interval"],
+    ["dbpc", "component"], "gateway",
+    
+    ["swift", "auth"], ["general", "swift", "ST_AUTH"],
+    ["swift", "user"], ["general", "swift", "ST_USER"],
+    ["swift", "key"],  ["general", "swift", "ST_KEY"],
+
+    ["vddb_async", "url"],         ["vddb_async", "matches_server"],
+    ["vddb_async", "user"],        ["vddb_async", "user"],
+    ["vddb_async", "passwd"],      ["vddb_async", "passwd"],
+    ["vddb_async", "all_matches"], true,
+    ["vddb_async", "req_timeout"], 2,
+
+    ["query_broker", "mq_url"],         ["query_broker", "gatewaymqurl"],
+    ["query_broker", "exchange"],       ["rabbitmq", "gateway_submit", "exchange_name"],
+    ["query_broker", "routing_key"],    ["rabbitmq", "gateway_submit", "routing_key"],
+    ["query_broker", "jsonrpc_method"], "submit",
+    ["query_broker", "publish_timeout"], 3
+]

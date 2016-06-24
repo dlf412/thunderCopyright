@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "VobileSdkTool", "VobileSdkGuiTest\VobileSdkGuiTest.vcproj", "{7D2DFCBF-F807-45D0-B30B-791D8C9D1662}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SdkTest", "SdkTest\SdkTest.vcproj", "{10043DDE-C00E-4E98-AA14-DA99838BCFF9}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6525280D-C82C-45A2-9F99-47DFC7F498D8} = {6525280D-C82C-45A2-9F99-47DFC7F498D8}
+		{C3A8E1DC-F2B0-412A-9489-A58E1028EF71} = {C3A8E1DC-F2B0-412A-9489-A58E1028EF71}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "vcri", "vcri\vcri.vcproj", "{6525280D-C82C-45A2-9F99-47DFC7F498D8}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "VcriTest", "VcriTest\VcriTest.vcproj", "{FF5059CD-1707-4748-BF7E-2F505AA23008}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "json_c", "json_c\json_c.vcproj", "{C3A8E1DC-F2B0-412A-9489-A58E1028EF71}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SDK_TOOL", "SDK_TOOL\SDK_TOOL.vcproj", "{5E08BCBC-126B-41DB-9B1C-A71BF04E27CB}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MyTest", "MyTest\MyTest.vcproj", "{86FF63CE-7CAA-4611-9732-D8A7063A6BB7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7D2DFCBF-F807-45D0-B30B-791D8C9D1662}.Debug|Win32.ActiveCfg = Debug|Win32
+		{7D2DFCBF-F807-45D0-B30B-791D8C9D1662}.Debug|Win32.Build.0 = Debug|Win32
+		{7D2DFCBF-F807-45D0-B30B-791D8C9D1662}.Release|Win32.ActiveCfg = Release|Win32
+		{7D2DFCBF-F807-45D0-B30B-791D8C9D1662}.Release|Win32.Build.0 = Release|Win32
+		{10043DDE-C00E-4E98-AA14-DA99838BCFF9}.Debug|Win32.ActiveCfg = Debug|Win32
+		{10043DDE-C00E-4E98-AA14-DA99838BCFF9}.Debug|Win32.Build.0 = Debug|Win32
+		{10043DDE-C00E-4E98-AA14-DA99838BCFF9}.Release|Win32.ActiveCfg = Release|Win32
+		{10043DDE-C00E-4E98-AA14-DA99838BCFF9}.Release|Win32.Build.0 = Release|Win32
+		{6525280D-C82C-45A2-9F99-47DFC7F498D8}.Debug|Win32.ActiveCfg = Debug|Win32
+		{6525280D-C82C-45A2-9F99-47DFC7F498D8}.Debug|Win32.Build.0 = Debug|Win32
+		{6525280D-C82C-45A2-9F99-47DFC7F498D8}.Release|Win32.ActiveCfg = Release|Win32
+		{6525280D-C82C-45A2-9F99-47DFC7F498D8}.Release|Win32.Build.0 = Release|Win32
+		{FF5059CD-1707-4748-BF7E-2F505AA23008}.Debug|Win32.ActiveCfg = Debug|Win32
+		{FF5059CD-1707-4748-BF7E-2F505AA23008}.Debug|Win32.Build.0 = Debug|Win32
+		{FF5059CD-1707-4748-BF7E-2F505AA23008}.Release|Win32.ActiveCfg = Release|Win32
+		{FF5059CD-1707-4748-BF7E-2F505AA23008}.Release|Win32.Build.0 = Release|Win32
+		{C3A8E1DC-F2B0-412A-9489-A58E1028EF71}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C3A8E1DC-F2B0-412A-9489-A58E1028EF71}.Debug|Win32.Build.0 = Debug|Win32
+		{C3A8E1DC-F2B0-412A-9489-A58E1028EF71}.Release|Win32.ActiveCfg = Release|Win32
+		{C3A8E1DC-F2B0-412A-9489-A58E1028EF71}.Release|Win32.Build.0 = Release|Win32
+		{5E08BCBC-126B-41DB-9B1C-A71BF04E27CB}.Debug|Win32.ActiveCfg = Debug|Win32
+		{5E08BCBC-126B-41DB-9B1C-A71BF04E27CB}.Debug|Win32.Build.0 = Debug|Win32
+		{5E08BCBC-126B-41DB-9B1C-A71BF04E27CB}.Release|Win32.ActiveCfg = Release|Win32
+		{5E08BCBC-126B-41DB-9B1C-A71BF04E27CB}.Release|Win32.Build.0 = Release|Win32
+		{86FF63CE-7CAA-4611-9732-D8A7063A6BB7}.Debug|Win32.ActiveCfg = Debug|Win32
+		{86FF63CE-7CAA-4611-9732-D8A7063A6BB7}.Debug|Win32.Build.0 = Debug|Win32
+		{86FF63CE-7CAA-4611-9732-D8A7063A6BB7}.Release|Win32.ActiveCfg = Release|Win32
+		{86FF63CE-7CAA-4611-9732-D8A7063A6BB7}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

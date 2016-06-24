@@ -1,0 +1,706 @@
+{
+    "test_webpy_gevent.py": {
+        "cmd_tmpl": "gunicorn --certfile=cert.pem --keyfile=key.pem -k gevent -w %(processes)d -b 0.0.0.0:%(port)d test_webpy_gevent:wsgiapp 2>/dev/null 1>/dev/null", 
+        "port": 8002, 
+        "results": [
+            {
+                "concurrent": 200, 
+                "processes": 1, 
+                "output": "** SIEGE 2.70\n** Preparing 200 concurrent users for battle.\nThe server is now under siege...\nLifting the server siege...-\b      done.\n\bTransactions:\t\t        2349 hits\nAvailability:\t\t      100.00 %\nElapsed time:\t\t        9.29 secs\nData transferred:\t        0.02 MB\nResponse time:\t\t        0.28 secs\nTransaction rate:\t      252.85 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t       70.90\nSuccessful transactions:        2349\nFailed transactions:\t           0\nLongest transaction:\t        0.60\nShortest transaction:\t        0.20\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 400, 
+                "processes": 1, 
+                "output": "** SIEGE 2.70\n** Preparing 400 concurrent users for battle.\nThe server is now under siege...\nLifting the server siege...-\b      done.\n\bTransactions:\t\t        3095 hits\nAvailability:\t\t      100.00 %\nElapsed time:\t\t        9.96 secs\nData transferred:\t        0.03 MB\nResponse time:\t\t        0.73 secs\nTransaction rate:\t      310.74 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t      225.89\nSuccessful transactions:        3095\nFailed transactions:\t           0\nLongest transaction:\t        1.78\nShortest transaction:\t        0.31\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 600, 
+                "processes": 1, 
+                "output": "** SIEGE 2.70\n** Preparing 600 concurrent users for battle.\nThe server is now under siege...\nLifting the server siege...-\b      done.\n\bTransactions:\t\t        2905 hits\nAvailability:\t\t      100.00 %\nElapsed time:\t\t        9.96 secs\nData transferred:\t        0.03 MB\nResponse time:\t\t        1.34 secs\nTransaction rate:\t      291.67 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t      390.86\nSuccessful transactions:        2905\nFailed transactions:\t           0\nLongest transaction:\t        4.42\nShortest transaction:\t        0.21\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 800, 
+                "processes": 1, 
+                "output": "** SIEGE 2.70\n** Preparing 800 concurrent users for battle.\nThe server is now under siege...\nLifting the server siege...-\b      done.\n\bTransactions:\t\t        2706 hits\nAvailability:\t\t      100.00 %\nElapsed time:\t\t        9.96 secs\nData transferred:\t        0.03 MB\nResponse time:\t\t        1.98 secs\nTransaction rate:\t      271.69 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t      539.27\nSuccessful transactions:        2706\nFailed transactions:\t           0\nLongest transaction:\t        8.60\nShortest transaction:\t        0.21\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 1000, 
+                "processes": 1, 
+                "output": "** SIEGE 2.70\n** Preparing 1000 concurrent users for battle.\nThe server is now under siege...\nLifting the server siege...-\b      done.\n\bTransactions:\t\t        2740 hits\nAvailability:\t\t      100.00 %\nElapsed time:\t\t        9.96 secs\nData transferred:\t        0.03 MB\nResponse time:\t\t        2.08 secs\nTransaction rate:\t      275.10 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t      571.68\nSuccessful transactions:        2740\nFailed transactions:\t           0\nLongest transaction:\t        8.15\nShortest transaction:\t        0.21\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 200, 
+                "processes": 2, 
+                "output": "** SIEGE 2.70\n** Preparing 200 concurrent users for battle.\nThe server is now under siege...\nLifting the server siege...-\b      done.\n\bTransactions:\t\t        2484 hits\nAvailability:\t\t      100.00 %\nElapsed time:\t\t        9.72 secs\nData transferred:\t        0.02 MB\nResponse time:\t\t        0.27 secs\nTransaction rate:\t      255.56 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t       69.94\nSuccessful transactions:        2484\nFailed transactions:\t           0\nLongest transaction:\t        0.53\nShortest transaction:\t        0.20\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 400, 
+                "processes": 2, 
+                "output": "** SIEGE 2.70\n** Preparing 400 concurrent users for battle.\nThe server is now under siege...\nLifting the server siege...-\b      done.\n\bTransactions:\t\t        2984 hits\nAvailability:\t\t      100.00 %\nElapsed time:\t\t        9.96 secs\nData transferred:\t        0.03 MB\nResponse time:\t\t        0.75 secs\nTransaction rate:\t      299.60 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t      223.43\nSuccessful transactions:        2984\nFailed transactions:\t           0\nLongest transaction:\t        1.89\nShortest transaction:\t        0.22\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 600, 
+                "processes": 2, 
+                "output": "** SIEGE 2.70\n** Preparing 600 concurrent users for battle.\nThe server is now under siege...\nLifting the server siege...-\b      done.\n\bTransactions:\t\t        2846 hits\nAvailability:\t\t      100.00 %\nElapsed time:\t\t        9.96 secs\nData transferred:\t        0.03 MB\nResponse time:\t\t        1.42 secs\nTransaction rate:\t      285.74 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t      406.75\nSuccessful transactions:        2846\nFailed transactions:\t           0\nLongest transaction:\t        5.02\nShortest transaction:\t        0.24\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 800, 
+                "processes": 2, 
+                "output": "** SIEGE 2.70\n** Preparing 800 concurrent users for battle.\nThe server is now under siege...\nLifting the server siege...-\b      done.\n\bTransactions:\t\t        2611 hits\nAvailability:\t\t      100.00 %\nElapsed time:\t\t        9.94 secs\nData transferred:\t        0.02 MB\nResponse time:\t\t        1.96 secs\nTransaction rate:\t      262.68 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t      515.01\nSuccessful transactions:        2613\nFailed transactions:\t           0\nLongest transaction:\t        8.32\nShortest transaction:\t        0.21\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 1000, 
+                "processes": 2, 
+                "output": "** SIEGE 2.70\n** Preparing 1000 concurrent users for battle.\nThe server is now under siege...[\u001b[1;33merror\u001b[0m] socket: unable to connect sock.c:222: Operation already in progress\n[\u001b[1;33merror\u001b[0m] socket: unable to connect sock.c:222: Operation already in progress\n[\u001b[1;33merror\u001b[0m] socket: unable to connect sock.c:222: Operation already in progress\n\nLifting the server siege...-\b      done.\n\bTransactions:\t\t        2687 hits\nAvailability:\t\t       99.89 %\nElapsed time:\t\t        9.96 secs\nData transferred:\t        0.03 MB\nResponse time:\t\t        2.15 secs\nTransaction rate:\t      269.78 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t      580.59\nSuccessful transactions:        2687\nFailed transactions:\t           3\nLongest transaction:\t        8.84\nShortest transaction:\t        0.21\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 200, 
+                "processes": 4, 
+                "output": "** SIEGE 2.70\n** Preparing 200 concurrent users for battle.\nThe server is now under siege...\nLifting the server siege...-\b      done.\n\bTransactions:\t\t        2562 hits\nAvailability:\t\t      100.00 %\nElapsed time:\t\t        9.74 secs\nData transferred:\t        0.02 MB\nResponse time:\t\t        0.26 secs\nTransaction rate:\t      263.04 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t       69.06\nSuccessful transactions:        2562\nFailed transactions:\t           0\nLongest transaction:\t        0.60\nShortest transaction:\t        0.20\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 400, 
+                "processes": 4, 
+                "output": "** SIEGE 2.70\n** Preparing 400 concurrent users for battle.\nThe server is now under siege...\nLifting the server siege...-\b      done.\n\bTransactions:\t\t        3063 hits\nAvailability:\t\t      100.00 %\nElapsed time:\t\t        9.96 secs\nData transferred:\t        0.03 MB\nResponse time:\t\t        0.73 secs\nTransaction rate:\t      307.53 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t      223.47\nSuccessful transactions:        3063\nFailed transactions:\t           0\nLongest transaction:\t        1.92\nShortest transaction:\t        0.25\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 600, 
+                "processes": 4, 
+                "output": "** SIEGE 2.70\n** Preparing 600 concurrent users for battle.\nThe server is now under siege...\nLifting the server siege...-\b      done.\n\bTransactions:\t\t        2950 hits\nAvailability:\t\t      100.00 %\nElapsed time:\t\t        9.96 secs\nData transferred:\t        0.03 MB\nResponse time:\t\t        1.29 secs\nTransaction rate:\t      296.18 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t      382.01\nSuccessful transactions:        2950\nFailed transactions:\t           0\nLongest transaction:\t        4.20\nShortest transaction:\t        0.27\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 800, 
+                "processes": 4, 
+                "output": "** SIEGE 2.70\n** Preparing 800 concurrent users for battle.\nThe server is now under siege...\nLifting the server siege...-\b      done.\n\bTransactions:\t\t        2665 hits\nAvailability:\t\t      100.00 %\nElapsed time:\t\t        9.96 secs\nData transferred:\t        0.03 MB\nResponse time:\t\t        1.70 secs\nTransaction rate:\t      267.57 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t      455.44\nSuccessful transactions:        2665\nFailed transactions:\t           0\nLongest transaction:\t        8.44\nShortest transaction:\t        0.57\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 1000, 
+                "processes": 4, 
+                "output": "** SIEGE 2.70\n** Preparing 1000 concurrent users for battle.\nThe server is now under siege...socket: connection timed out\n\nLifting the server siege...-\b      done.\n\bTransactions:\t\t        2830 hits\nAvailability:\t\t       99.96 %\nElapsed time:\t\t        9.95 secs\nData transferred:\t        0.03 MB\nResponse time:\t\t        1.83 secs\nTransaction rate:\t      284.42 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t      519.23\nSuccessful transactions:        2830\nFailed transactions:\t           1\nLongest transaction:\t        4.92\nShortest transaction:\t        0.27\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 200, 
+                "processes": 8, 
+                "output": "** SIEGE 2.70\n** Preparing 200 concurrent users for battle.\nThe server is now under siege...\nLifting the server siege...-\b      done.\n\bTransactions:\t\t        2414 hits\nAvailability:\t\t      100.00 %\nElapsed time:\t\t        9.64 secs\nData transferred:\t        0.02 MB\nResponse time:\t\t        0.28 secs\nTransaction rate:\t      250.41 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t       69.89\nSuccessful transactions:        2414\nFailed transactions:\t           0\nLongest transaction:\t        0.56\nShortest transaction:\t        0.20\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 400, 
+                "processes": 8, 
+                "output": "** SIEGE 2.70\n** Preparing 400 concurrent users for battle.\nThe server is now under siege...\nLifting the server siege...-\b      done.\n\bTransactions:\t\t        3064 hits\nAvailability:\t\t      100.00 %\nElapsed time:\t\t        9.96 secs\nData transferred:\t        0.03 MB\nResponse time:\t\t        0.74 secs\nTransaction rate:\t      307.63 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t      228.21\nSuccessful transactions:        3064\nFailed transactions:\t           0\nLongest transaction:\t        1.99\nShortest transaction:\t        0.22\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 600, 
+                "processes": 8, 
+                "output": "** SIEGE 2.70\n** Preparing 600 concurrent users for battle.\nThe server is now under siege...\nLifting the server siege...-\b      done.\n\bTransactions:\t\t        3018 hits\nAvailability:\t\t      100.00 %\nElapsed time:\t\t        9.98 secs\nData transferred:\t        0.03 MB\nResponse time:\t\t        1.30 secs\nTransaction rate:\t      302.40 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t      392.76\nSuccessful transactions:        3018\nFailed transactions:\t           0\nLongest transaction:\t        4.30\nShortest transaction:\t        0.24\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 800, 
+                "processes": 8, 
+                "output": "** SIEGE 2.70\n** Preparing 800 concurrent users for battle.\nThe server is now under siege...\nLifting the server siege...-\b      done.\n\bTransactions:\t\t        2764 hits\nAvailability:\t\t      100.00 %\nElapsed time:\t\t        9.96 secs\nData transferred:\t        0.03 MB\nResponse time:\t\t        1.70 secs\nTransaction rate:\t      277.51 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t      471.08\nSuccessful transactions:        2764\nFailed transactions:\t           0\nLongest transaction:\t        9.58\nShortest transaction:\t        0.22\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 1000, 
+                "processes": 8, 
+                "output": "** SIEGE 2.70\n** Preparing 1000 concurrent users for battle.\nThe server is now under siege...[\u001b[1;33merror\u001b[0m] socket: unable to connect sock.c:222: Operation already in progress\n\nLifting the server siege...-\b      done.\n\bTransactions:\t\t        2771 hits\nAvailability:\t\t       96.28 %\nElapsed time:\t\t        9.95 secs\nData transferred:\t        0.03 MB\nResponse time:\t\t        1.88 secs\nTransaction rate:\t      278.49 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t      523.76\nSuccessful transactions:        2771\nFailed transactions:\t         107\nLongest transaction:\t        5.74\nShortest transaction:\t        0.22\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 200, 
+                "processes": 16, 
+                "output": "** SIEGE 2.70\n** Preparing 200 concurrent users for battle.\nThe server is now under siege...\nLifting the server siege...-\b      done.\n\bTransactions:\t\t        2496 hits\nAvailability:\t\t      100.00 %\nElapsed time:\t\t        9.60 secs\nData transferred:\t        0.02 MB\nResponse time:\t\t        0.27 secs\nTransaction rate:\t      260.00 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t       69.69\nSuccessful transactions:        2496\nFailed transactions:\t           0\nLongest transaction:\t        0.57\nShortest transaction:\t        0.20\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 400, 
+                "processes": 16, 
+                "output": "** SIEGE 2.70\n** Preparing 400 concurrent users for battle.\nThe server is now under siege...\nLifting the server siege...-\b      done.\n\bTransactions:\t\t        3161 hits\nAvailability:\t\t      100.00 %\nElapsed time:\t\t        9.96 secs\nData transferred:\t        0.03 MB\nResponse time:\t\t        0.70 secs\nTransaction rate:\t      317.37 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t      222.71\nSuccessful transactions:        3161\nFailed transactions:\t           0\nLongest transaction:\t        1.02\nShortest transaction:\t        0.26\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 600, 
+                "processes": 16, 
+                "output": "** SIEGE 2.70\n** Preparing 600 concurrent users for battle.\nThe server is now under siege...\nLifting the server siege...-\b      done.\n\bTransactions:\t\t        2935 hits\nAvailability:\t\t      100.00 %\nElapsed time:\t\t        9.96 secs\nData transferred:\t        0.03 MB\nResponse time:\t\t        1.32 secs\nTransaction rate:\t      294.68 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t      388.96\nSuccessful transactions:        2935\nFailed transactions:\t           0\nLongest transaction:\t        4.18\nShortest transaction:\t        0.26\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 800, 
+                "processes": 16, 
+                "output": "** SIEGE 2.70\n** Preparing 800 concurrent users for battle.\nThe server is now under siege...\nLifting the server siege...-\b      done.\n\bTransactions:\t\t        2885 hits\nAvailability:\t\t      100.00 %\nElapsed time:\t\t        9.96 secs\nData transferred:\t        0.03 MB\nResponse time:\t\t        1.66 secs\nTransaction rate:\t      289.66 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t      481.76\nSuccessful transactions:        2885\nFailed transactions:\t           0\nLongest transaction:\t        5.00\nShortest transaction:\t        0.27\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 1000, 
+                "processes": 16, 
+                "output": "** SIEGE 2.70\n** Preparing 1000 concurrent users for battle.\nThe server is now under siege...\nLifting the server siege...-\b      done.\n\bTransactions:\t\t        2548 hits\nAvailability:\t\t      100.00 %\nElapsed time:\t\t        9.97 secs\nData transferred:\t        0.02 MB\nResponse time:\t\t        2.09 secs\nTransaction rate:\t      255.57 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t      533.56\nSuccessful transactions:        2548\nFailed transactions:\t           0\nLongest transaction:\t        4.81\nShortest transaction:\t        0.21\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 200, 
+                "processes": 32, 
+                "output": "** SIEGE 2.70\n** Preparing 200 concurrent users for battle.\nThe server is now under siege...\nLifting the server siege...-\b      done.\n\bTransactions:\t\t        2439 hits\nAvailability:\t\t      100.00 %\nElapsed time:\t\t        9.57 secs\nData transferred:\t        0.02 MB\nResponse time:\t\t        0.28 secs\nTransaction rate:\t      254.86 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t       70.63\nSuccessful transactions:        2439\nFailed transactions:\t           0\nLongest transaction:\t        0.56\nShortest transaction:\t        0.20\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 400, 
+                "processes": 32, 
+                "output": "** SIEGE 2.70\n** Preparing 400 concurrent users for battle.\nThe server is now under siege...\nLifting the server siege...-\b      done.\n\bTransactions:\t\t        2978 hits\nAvailability:\t\t      100.00 %\nElapsed time:\t\t        9.96 secs\nData transferred:\t        0.03 MB\nResponse time:\t\t        0.73 secs\nTransaction rate:\t      299.00 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t      219.50\nSuccessful transactions:        2978\nFailed transactions:\t           0\nLongest transaction:\t        1.94\nShortest transaction:\t        0.25\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 600, 
+                "processes": 32, 
+                "output": "** SIEGE 2.70\n** Preparing 600 concurrent users for battle.\nThe server is now under siege...\nLifting the server siege...-\b      done.\n\bTransactions:\t\t        2951 hits\nAvailability:\t\t      100.00 %\nElapsed time:\t\t        9.98 secs\nData transferred:\t        0.03 MB\nResponse time:\t\t        1.23 secs\nTransaction rate:\t      295.69 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t      364.16\nSuccessful transactions:        2951\nFailed transactions:\t           0\nLongest transaction:\t        4.15\nShortest transaction:\t        0.21\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 800, 
+                "processes": 32, 
+                "output": "** SIEGE 2.70\n** Preparing 800 concurrent users for battle.\nThe server is now under siege...[\u001b[1;33merror\u001b[0m] socket: unable to connect sock.c:222: Operation already in progress\n[\u001b[1;33merror\u001b[0m] socket: unable to connect sock.c:222: Operation already in progress\n[\u001b[1;33merror\u001b[0m] socket: unable to connect sock.c:222: Operation already in progress\n[\u001b[1;33merror\u001b[0m] socket: unable to connect sock.c:222: Operation already in progress\n[\u001b[1;33merror\u001b[0m] socket: unable to connect sock.c:222: Operation already in progress\n\nLifting the server siege...-\b      done.\n\bTransactions:\t\t        2657 hits\nAvailability:\t\t       99.81 %\nElapsed time:\t\t        9.96 secs\nData transferred:\t        0.03 MB\nResponse time:\t\t        1.85 secs\nTransaction rate:\t      266.77 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t      493.44\nSuccessful transactions:        2657\nFailed transactions:\t           5\nLongest transaction:\t        4.74\nShortest transaction:\t        0.30\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 1000, 
+                "processes": 32, 
+                "output": "** SIEGE 2.70\n** Preparing 1000 concurrent users for battle.\nThe server is now under siege...[\u001b[1;33merror\u001b[0m] socket: unable to connect sock.c:222: Operation already in progress\n\nLifting the server siege...-\b      done.\n\bTransactions:\t\t        2608 hits\nAvailability:\t\t       97.53 %\nElapsed time:\t\t        9.96 secs\nData transferred:\t        0.02 MB\nResponse time:\t\t        1.92 secs\nTransaction rate:\t      261.85 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t      502.80\nSuccessful transactions:        2608\nFailed transactions:\t          66\nLongest transaction:\t        8.64\nShortest transaction:\t        0.20\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 200, 
+                "processes": 64, 
+                "output": "** SIEGE 2.70\n** Preparing 200 concurrent users for battle.\nThe server is now under siege...\nLifting the server siege...-\b      done.\n\bTransactions:\t\t        2445 hits\nAvailability:\t\t      100.00 %\nElapsed time:\t\t        9.48 secs\nData transferred:\t        0.02 MB\nResponse time:\t\t        0.27 secs\nTransaction rate:\t      257.91 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t       69.54\nSuccessful transactions:        2445\nFailed transactions:\t           0\nLongest transaction:\t        0.63\nShortest transaction:\t        0.20\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 400, 
+                "processes": 64, 
+                "output": "** SIEGE 2.70\n** Preparing 400 concurrent users for battle.\nThe server is now under siege...\nLifting the server siege...-\b      done.\n\bTransactions:\t\t        2995 hits\nAvailability:\t\t      100.00 %\nElapsed time:\t\t        9.97 secs\nData transferred:\t        0.03 MB\nResponse time:\t\t        0.75 secs\nTransaction rate:\t      300.40 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t      226.63\nSuccessful transactions:        2995\nFailed transactions:\t           0\nLongest transaction:\t        2.06\nShortest transaction:\t        0.27\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 600, 
+                "processes": 64, 
+                "output": "** SIEGE 2.70\n** Preparing 600 concurrent users for battle.\nThe server is now under siege...\nLifting the server siege...-\b      done.\n\bTransactions:\t\t        2839 hits\nAvailability:\t\t      100.00 %\nElapsed time:\t\t        9.96 secs\nData transferred:\t        0.03 MB\nResponse time:\t\t        1.39 secs\nTransaction rate:\t      285.04 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t      395.01\nSuccessful transactions:        2839\nFailed transactions:\t           0\nLongest transaction:\t        4.96\nShortest transaction:\t        0.24\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 800, 
+                "processes": 64, 
+                "output": "** SIEGE 2.70\n** Preparing 800 concurrent users for battle.\nThe server is now under siege...[\u001b[1;33merror\u001b[0m] socket: unable to connect sock.c:222: Operation already in progress\n\nLifting the server siege...-\b      done.\n\bTransactions:\t\t        2845 hits\nAvailability:\t\t       99.72 %\nElapsed time:\t\t        9.96 secs\nData transferred:\t        0.03 MB\nResponse time:\t\t        1.72 secs\nTransaction rate:\t      285.64 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t      492.18\nSuccessful transactions:        2845\nFailed transactions:\t           8\nLongest transaction:\t        5.50\nShortest transaction:\t        0.24\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 1000, 
+                "processes": 64, 
+                "output": "** SIEGE 2.70\n** Preparing 1000 concurrent users for battle.\nThe server is now under siege...socket: connection timed out\n\nLifting the server siege...-\b      done.\n\bTransactions:\t\t        2864 hits\nAvailability:\t\t       99.97 %\nElapsed time:\t\t        9.94 secs\nData transferred:\t        0.03 MB\nResponse time:\t\t        1.85 secs\nTransaction rate:\t      288.13 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t      534.35\nSuccessful transactions:        2864\nFailed transactions:\t           1\nLongest transaction:\t        4.59\nShortest transaction:\t        0.22\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }
+        ]
+    }, 
+    "test_http.go": {
+        "cmd_tmpl": "./test_http.bin -port=%(port)d -size=%(processes)d 2>/dev/null 1>/dev/null", 
+        "port": 9001, 
+        "results": [
+            {
+                "concurrent": 200, 
+                "processes": 1, 
+                "output": "** SIEGE 2.70\n** Preparing 200 concurrent users for battle.\nThe server is now under siege...\nLifting the server siege...-\b      done.\n\bTransactions:\t\t         947 hits\nAvailability:\t\t      100.00 %\nElapsed time:\t\t        9.93 secs\nData transferred:\t        0.01 MB\nResponse time:\t\t        1.30 secs\nTransaction rate:\t       95.37 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t      123.58\nSuccessful transactions:         947\nFailed transactions:\t           0\nLongest transaction:\t        3.76\nShortest transaction:\t        0.62\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 400, 
+                "processes": 1, 
+                "output": "** SIEGE 2.70\n** Preparing 400 concurrent users for battle.\nThe server is now under siege...\nLifting the server siege...-\b      done.\n\bTransactions:\t\t         726 hits\nAvailability:\t\t      100.00 %\nElapsed time:\t\t        9.97 secs\nData transferred:\t        0.00 MB\nResponse time:\t\t        3.62 secs\nTransaction rate:\t       72.82 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t      263.58\nSuccessful transactions:         726\nFailed transactions:\t           0\nLongest transaction:\t        7.36\nShortest transaction:\t        1.21\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 600, 
+                "processes": 1, 
+                "output": "** SIEGE 2.70\n** Preparing 600 concurrent users for battle.\nThe server is now under siege...\nLifting the server siege...-\b      done.\n\bTransactions:\t\t         623 hits\nAvailability:\t\t      100.00 %\nElapsed time:\t\t        9.96 secs\nData transferred:\t        0.00 MB\nResponse time:\t\t        4.40 secs\nTransaction rate:\t       62.55 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t      275.50\nSuccessful transactions:         623\nFailed transactions:\t           0\nLongest transaction:\t        7.00\nShortest transaction:\t        0.00\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 800, 
+                "processes": 1, 
+                "output": "** SIEGE 2.70\n** Preparing 800 concurrent users for battle.\nThe server is now under siege...\nLifting the server siege...-\b      done.\n\bTransactions:\t\t         577 hits\nAvailability:\t\t      100.00 %\nElapsed time:\t\t        9.95 secs\nData transferred:\t        0.00 MB\nResponse time:\t\t        5.51 secs\nTransaction rate:\t       57.99 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t      319.75\nSuccessful transactions:         577\nFailed transactions:\t           0\nLongest transaction:\t        9.11\nShortest transaction:\t        0.00\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 1000, 
+                "processes": 1, 
+                "output": "** SIEGE 2.70\n** Preparing 1000 concurrent users for battle.\nThe server is now under siege...socket: connection timed out\nsocket: connection timed out\nsocket: connection timed out\nsocket: connection timed out\nsocket: connection timed out\nsocket: connection timed out\n\nLifting the server siege...-\b      done.\n\bTransactions:\t\t         289 hits\nAvailability:\t\t       93.53 %\nElapsed time:\t\t        9.96 secs\nData transferred:\t        0.00 MB\nResponse time:\t\t        6.80 secs\nTransaction rate:\t       29.02 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t      197.44\nSuccessful transactions:         289\nFailed transactions:\t          20\nLongest transaction:\t        8.88\nShortest transaction:\t        0.00\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 200, 
+                "processes": 2, 
+                "output": "** SIEGE 2.70\n** Preparing 200 concurrent users for battle.\nThe server is now under siege...\nLifting the server siege...-\b      done.\n\bTransactions:\t\t         855 hits\nAvailability:\t\t      100.00 %\nElapsed time:\t\t        9.95 secs\nData transferred:\t        0.00 MB\nResponse time:\t\t        1.33 secs\nTransaction rate:\t       85.93 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t      114.44\nSuccessful transactions:         855\nFailed transactions:\t           0\nLongest transaction:\t        3.94\nShortest transaction:\t        0.17\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 400, 
+                "processes": 2, 
+                "output": "** SIEGE 2.70\n** Preparing 400 concurrent users for battle.\nThe server is now under siege...\nLifting the server siege...-\b      done.\n\bTransactions:\t\t         750 hits\nAvailability:\t\t      100.00 %\nElapsed time:\t\t        9.97 secs\nData transferred:\t        0.00 MB\nResponse time:\t\t        3.57 secs\nTransaction rate:\t       75.23 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t      268.45\nSuccessful transactions:         750\nFailed transactions:\t           0\nLongest transaction:\t        8.21\nShortest transaction:\t        1.14\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 600, 
+                "processes": 2, 
+                "output": "** SIEGE 2.70\n** Preparing 600 concurrent users for battle.\nThe server is now under siege...\nLifting the server siege...-\b      done.\n\bTransactions:\t\t         634 hits\nAvailability:\t\t      100.00 %\nElapsed time:\t\t        9.98 secs\nData transferred:\t        0.00 MB\nResponse time:\t\t        5.30 secs\nTransaction rate:\t       63.53 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t      336.53\nSuccessful transactions:         634\nFailed transactions:\t           0\nLongest transaction:\t        7.81\nShortest transaction:\t        1.91\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 800, 
+                "processes": 2, 
+                "output": "** SIEGE 2.70\n** Preparing 800 concurrent users for battle.\nThe server is now under siege...\nLifting the server siege...-\b      done.\n\bTransactions:\t\t         546 hits\nAvailability:\t\t      100.00 %\nElapsed time:\t\t        9.98 secs\nData transferred:\t        0.00 MB\nResponse time:\t\t        5.31 secs\nTransaction rate:\t       54.71 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t      290.29\nSuccessful transactions:         546\nFailed transactions:\t           0\nLongest transaction:\t        8.49\nShortest transaction:\t        0.78\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 1000, 
+                "processes": 2, 
+                "output": "** SIEGE 2.70\n** Preparing 1000 concurrent users for battle.\nThe server is now under siege...\nLifting the server siege...-\b      done.\n\bTransactions:\t\t         480 hits\nAvailability:\t\t      100.00 %\nElapsed time:\t\t        9.98 secs\nData transferred:\t        0.00 MB\nResponse time:\t\t        5.66 secs\nTransaction rate:\t       48.10 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t      272.35\nSuccessful transactions:         480\nFailed transactions:\t           0\nLongest transaction:\t        8.83\nShortest transaction:\t        0.00\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 200, 
+                "processes": 4, 
+                "output": "** SIEGE 2.70\n** Preparing 200 concurrent users for battle.\nThe server is now under siege...\nLifting the server siege...-\b      done.\n\bTransactions:\t\t         870 hits\nAvailability:\t\t      100.00 %\nElapsed time:\t\t        9.40 secs\nData transferred:\t        0.00 MB\nResponse time:\t\t        1.31 secs\nTransaction rate:\t       92.55 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t      121.61\nSuccessful transactions:         870\nFailed transactions:\t           0\nLongest transaction:\t        2.79\nShortest transaction:\t        0.42\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 400, 
+                "processes": 4, 
+                "output": "** SIEGE 2.70\n** Preparing 400 concurrent users for battle.\nThe server is now under siege...\nLifting the server siege...-\b      done.\n\bTransactions:\t\t         815 hits\nAvailability:\t\t      100.00 %\nElapsed time:\t\t        9.96 secs\nData transferred:\t        0.00 MB\nResponse time:\t\t        3.36 secs\nTransaction rate:\t       81.83 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t      275.07\nSuccessful transactions:         815\nFailed transactions:\t           0\nLongest transaction:\t        5.10\nShortest transaction:\t        1.04\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 600, 
+                "processes": 4, 
+                "output": "** SIEGE 2.70\n** Preparing 600 concurrent users for battle.\nThe server is now under siege...\nLifting the server siege...-\b      done.\n\bTransactions:\t\t         594 hits\nAvailability:\t\t      100.00 %\nElapsed time:\t\t        9.98 secs\nData transferred:\t        0.00 MB\nResponse time:\t\t        4.88 secs\nTransaction rate:\t       59.52 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t      290.72\nSuccessful transactions:         594\nFailed transactions:\t           0\nLongest transaction:\t        8.63\nShortest transaction:\t        0.79\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 800, 
+                "processes": 4, 
+                "output": "** SIEGE 2.70\n** Preparing 800 concurrent users for battle.\nThe server is now under siege...\nLifting the server siege...-\b      done.\n\bTransactions:\t\t         606 hits\nAvailability:\t\t      100.00 %\nElapsed time:\t\t        9.97 secs\nData transferred:\t        0.00 MB\nResponse time:\t\t        6.05 secs\nTransaction rate:\t       60.78 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t      367.60\nSuccessful transactions:         606\nFailed transactions:\t           0\nLongest transaction:\t        9.11\nShortest transaction:\t        2.45\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 1000, 
+                "processes": 4, 
+                "output": "** SIEGE 2.70\n** Preparing 1000 concurrent users for battle.\nThe server is now under siege...\nLifting the server siege...-\b      done.\n\bTransactions:\t\t         591 hits\nAvailability:\t\t      100.00 %\nElapsed time:\t\t        9.97 secs\nData transferred:\t        0.00 MB\nResponse time:\t\t        5.75 secs\nTransaction rate:\t       59.28 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t      340.86\nSuccessful transactions:         591\nFailed transactions:\t           0\nLongest transaction:\t        9.37\nShortest transaction:\t        0.00\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 200, 
+                "processes": 8, 
+                "output": "** SIEGE 2.70\n** Preparing 200 concurrent users for battle.\nThe server is now under siege...\nLifting the server siege...-\b      done.\n\bTransactions:\t\t         855 hits\nAvailability:\t\t      100.00 %\nElapsed time:\t\t        9.72 secs\nData transferred:\t        0.00 MB\nResponse time:\t\t        1.38 secs\nTransaction rate:\t       87.96 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t      121.43\nSuccessful transactions:         855\nFailed transactions:\t           0\nLongest transaction:\t        2.54\nShortest transaction:\t        0.44\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 400, 
+                "processes": 8, 
+                "output": "** SIEGE 2.70\n** Preparing 400 concurrent users for battle.\nThe server is now under siege...\nLifting the server siege...-\b      done.\n\bTransactions:\t\t         791 hits\nAvailability:\t\t      100.00 %\nElapsed time:\t\t        9.97 secs\nData transferred:\t        0.00 MB\nResponse time:\t\t        3.37 secs\nTransaction rate:\t       79.34 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t      267.17\nSuccessful transactions:         791\nFailed transactions:\t           0\nLongest transaction:\t        5.57\nShortest transaction:\t        1.22\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 600, 
+                "processes": 8, 
+                "output": "** SIEGE 2.70\n** Preparing 600 concurrent users for battle.\nThe server is now under siege...\nLifting the server siege...-\b      done.\n\bTransactions:\t\t         642 hits\nAvailability:\t\t      100.00 %\nElapsed time:\t\t        9.96 secs\nData transferred:\t        0.00 MB\nResponse time:\t\t        4.70 secs\nTransaction rate:\t       64.46 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t      302.97\nSuccessful transactions:         642\nFailed transactions:\t           0\nLongest transaction:\t        7.95\nShortest transaction:\t        0.00\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 800, 
+                "processes": 8, 
+                "output": "** SIEGE 2.70\n** Preparing 800 concurrent users for battle.\nThe server is now under siege...\nLifting the server siege...-\b      done.\n\bTransactions:\t\t         619 hits\nAvailability:\t\t       97.02 %\nElapsed time:\t\t        9.96 secs\nData transferred:\t        0.00 MB\nResponse time:\t\t        5.17 secs\nTransaction rate:\t       62.15 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t      321.00\nSuccessful transactions:         619\nFailed transactions:\t          19\nLongest transaction:\t        8.89\nShortest transaction:\t        0.00\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 1000, 
+                "processes": 8, 
+                "output": "** SIEGE 2.70\n** Preparing 1000 concurrent users for battle.\nThe server is now under siege...\nLifting the server siege...-\b      done.\n\bTransactions:\t\t         505 hits\nAvailability:\t\t      100.00 %\nElapsed time:\t\t        9.96 secs\nData transferred:\t        0.00 MB\nResponse time:\t\t        5.55 secs\nTransaction rate:\t       50.70 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t      281.40\nSuccessful transactions:         505\nFailed transactions:\t           0\nLongest transaction:\t        8.78\nShortest transaction:\t        0.00\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 200, 
+                "processes": 16, 
+                "output": "** SIEGE 2.70\n** Preparing 200 concurrent users for battle.\nThe server is now under siege...\nLifting the server siege...-\b      done.\n\bTransactions:\t\t         866 hits\nAvailability:\t\t      100.00 %\nElapsed time:\t\t        9.26 secs\nData transferred:\t        0.00 MB\nResponse time:\t\t        1.41 secs\nTransaction rate:\t       93.52 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t      131.79\nSuccessful transactions:         866\nFailed transactions:\t           0\nLongest transaction:\t        2.35\nShortest transaction:\t        0.63\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 400, 
+                "processes": 16, 
+                "output": "** SIEGE 2.70\n** Preparing 400 concurrent users for battle.\nThe server is now under siege...\nLifting the server siege...-\b      done.\n\bTransactions:\t\t         749 hits\nAvailability:\t\t      100.00 %\nElapsed time:\t\t        9.98 secs\nData transferred:\t        0.00 MB\nResponse time:\t\t        3.40 secs\nTransaction rate:\t       75.05 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t      254.84\nSuccessful transactions:         749\nFailed transactions:\t           0\nLongest transaction:\t        6.29\nShortest transaction:\t        1.43\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 600, 
+                "processes": 16, 
+                "output": "** SIEGE 2.70\n** Preparing 600 concurrent users for battle.\nThe server is now under siege...\nLifting the server siege...-\b      done.\n\bTransactions:\t\t         432 hits\nAvailability:\t\t      100.00 %\nElapsed time:\t\t        9.95 secs\nData transferred:\t        0.00 MB\nResponse time:\t\t        3.04 secs\nTransaction rate:\t       43.42 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t      131.96\nSuccessful transactions:         432\nFailed transactions:\t           0\nLongest transaction:\t        8.79\nShortest transaction:\t        0.00\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 800, 
+                "processes": 16, 
+                "output": "** SIEGE 2.70\n** Preparing 800 concurrent users for battle.\nThe server is now under siege...\nLifting the server siege...-\b      done.\n\bTransactions:\t\t         391 hits\nAvailability:\t\t      100.00 %\nElapsed time:\t\t        9.74 secs\nData transferred:\t        0.00 MB\nResponse time:\t\t        3.56 secs\nTransaction rate:\t       40.14 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t      142.87\nSuccessful transactions:         391\nFailed transactions:\t           0\nLongest transaction:\t        9.36\nShortest transaction:\t        0.00\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 1000, 
+                "processes": 16, 
+                "output": "** SIEGE 2.70\n** Preparing 1000 concurrent users for battle.\nThe server is now under siege...\nLifting the server siege...-\b      done.\n\bTransactions:\t\t         661 hits\nAvailability:\t\t      100.00 %\nElapsed time:\t\t        9.96 secs\nData transferred:\t        0.00 MB\nResponse time:\t\t        3.70 secs\nTransaction rate:\t       66.37 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t      245.59\nSuccessful transactions:         661\nFailed transactions:\t           0\nLongest transaction:\t        9.55\nShortest transaction:\t        0.92\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 200, 
+                "processes": 32, 
+                "output": "** SIEGE 2.70\n** Preparing 200 concurrent users for battle.\nThe server is now under siege...\nLifting the server siege...-\b      done.\n\bTransactions:\t\t         636 hits\nAvailability:\t\t      100.00 %\nElapsed time:\t\t        9.60 secs\nData transferred:\t        0.00 MB\nResponse time:\t\t        1.90 secs\nTransaction rate:\t       66.25 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t      125.60\nSuccessful transactions:         636\nFailed transactions:\t           0\nLongest transaction:\t        6.18\nShortest transaction:\t        0.10\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 400, 
+                "processes": 32, 
+                "output": "** SIEGE 2.70\n** Preparing 400 concurrent users for battle.\nThe server is now under siege...\nLifting the server siege...-\b      done.\n\bTransactions:\t\t         647 hits\nAvailability:\t\t      100.00 %\nElapsed time:\t\t        9.97 secs\nData transferred:\t        0.00 MB\nResponse time:\t\t        3.79 secs\nTransaction rate:\t       64.89 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t      245.63\nSuccessful transactions:         647\nFailed transactions:\t           0\nLongest transaction:\t        6.83\nShortest transaction:\t        1.17\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 600, 
+                "processes": 32, 
+                "output": "** SIEGE 2.70\n** Preparing 600 concurrent users for battle.\nThe server is now under siege...\nLifting the server siege...-\b      done.\n\bTransactions:\t\t         642 hits\nAvailability:\t\t      100.00 %\nElapsed time:\t\t        9.98 secs\nData transferred:\t        0.00 MB\nResponse time:\t\t        4.87 secs\nTransaction rate:\t       64.33 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t      313.58\nSuccessful transactions:         642\nFailed transactions:\t           0\nLongest transaction:\t        8.10\nShortest transaction:\t        0.00\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 800, 
+                "processes": 32, 
+                "output": "** SIEGE 2.70\n** Preparing 800 concurrent users for battle.\nThe server is now under siege...\nLifting the server siege...-\b      done.\n\bTransactions:\t\t         588 hits\nAvailability:\t\t      100.00 %\nElapsed time:\t\t        9.96 secs\nData transferred:\t        0.00 MB\nResponse time:\t\t        5.74 secs\nTransaction rate:\t       59.04 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t      338.79\nSuccessful transactions:         588\nFailed transactions:\t           0\nLongest transaction:\t        8.90\nShortest transaction:\t        0.00\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 1000, 
+                "processes": 32, 
+                "output": "** SIEGE 2.70\n** Preparing 1000 concurrent users for battle.\nThe server is now under siege...socket: connection timed out\nsocket: connection timed out\nsocket: connection timed out\nsocket: connection timed out\nsocket: connection timed out\nsocket: connection timed out\nsocket: connection timed out\nsocket: connection timed out\nsocket: connection timed out\nsocket: connection timed out\nsocket: connection timed out\n\nLifting the server siege...-\b      done.\n\bTransactions:\t\t         605 hits\nAvailability:\t\t       98.21 %\nElapsed time:\t\t        9.96 secs\nData transferred:\t        0.00 MB\nResponse time:\t\t        5.29 secs\nTransaction rate:\t       60.74 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t      321.26\nSuccessful transactions:         605\nFailed transactions:\t          11\nLongest transaction:\t        7.81\nShortest transaction:\t        2.46\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 200, 
+                "processes": 64, 
+                "output": "** SIEGE 2.70\n** Preparing 200 concurrent users for battle.\nThe server is now under siege...\nLifting the server siege...-\b      done.\n\bTransactions:\t\t         883 hits\nAvailability:\t\t      100.00 %\nElapsed time:\t\t        9.57 secs\nData transferred:\t        0.01 MB\nResponse time:\t\t        1.51 secs\nTransaction rate:\t       92.27 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t      139.53\nSuccessful transactions:         883\nFailed transactions:\t           0\nLongest transaction:\t        6.38\nShortest transaction:\t        0.57\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 400, 
+                "processes": 64, 
+                "output": "** SIEGE 2.70\n** Preparing 400 concurrent users for battle.\nThe server is now under siege...\nLifting the server siege...-\b      done.\n\bTransactions:\t\t         675 hits\nAvailability:\t\t      100.00 %\nElapsed time:\t\t        9.97 secs\nData transferred:\t        0.00 MB\nResponse time:\t\t        1.83 secs\nTransaction rate:\t       67.70 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t      123.69\nSuccessful transactions:         675\nFailed transactions:\t           0\nLongest transaction:\t        9.33\nShortest transaction:\t        0.23\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 600, 
+                "processes": 64, 
+                "output": "** SIEGE 2.70\n** Preparing 600 concurrent users for battle.\nThe server is now under siege...\nLifting the server siege...-\b\\\b      done.\n\bTransactions:\t\t         703 hits\nAvailability:\t\t      100.00 %\nElapsed time:\t\t        9.98 secs\nData transferred:\t        0.00 MB\nResponse time:\t\t        5.64 secs\nTransaction rate:\t       70.44 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t      397.12\nSuccessful transactions:         703\nFailed transactions:\t           0\nLongest transaction:\t        9.82\nShortest transaction:\t        0.36\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 800, 
+                "processes": 64, 
+                "output": "** SIEGE 2.70\n** Preparing 800 concurrent users for battle.\nThe server is now under siege...\nLifting the server siege...-\b      done.\n\bTransactions:\t\t         607 hits\nAvailability:\t\t      100.00 %\nElapsed time:\t\t        9.97 secs\nData transferred:\t        0.00 MB\nResponse time:\t\t        5.94 secs\nTransaction rate:\t       60.88 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t      361.60\nSuccessful transactions:         607\nFailed transactions:\t           0\nLongest transaction:\t        9.50\nShortest transaction:\t        0.00\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 1000, 
+                "processes": 64, 
+                "output": "** SIEGE 2.70\n** Preparing 1000 concurrent users for battle.\nThe server is now under siege...\nLifting the server siege...-\b      done.\n\bTransactions:\t\t         591 hits\nAvailability:\t\t      100.00 %\nElapsed time:\t\t        9.96 secs\nData transferred:\t        0.00 MB\nResponse time:\t\t        6.26 secs\nTransaction rate:\t       59.34 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t      371.55\nSuccessful transactions:         591\nFailed transactions:\t           0\nLongest transaction:\t        9.40\nShortest transaction:\t        0.00\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }
+        ]
+    }, 
+    "test_martini.go": {
+        "cmd_tmpl": "./test_martini.bin -port=%(port)d -size=%(processes)d 2>/dev/null 1>/dev/null", 
+        "port": 9002, 
+        "results": [
+            {
+                "concurrent": 200, 
+                "processes": 1, 
+                "output": "** SIEGE 2.70\n** Preparing 200 concurrent users for battle.\nThe server is now under siege...\nLifting the server siege...-\b      done.\n\bTransactions:\t\t         858 hits\nAvailability:\t\t      100.00 %\nElapsed time:\t\t        9.74 secs\nData transferred:\t        0.01 MB\nResponse time:\t\t        1.58 secs\nTransaction rate:\t       88.09 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t      139.33\nSuccessful transactions:         858\nFailed transactions:\t           0\nLongest transaction:\t        2.20\nShortest transaction:\t        0.57\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 400, 
+                "processes": 1, 
+                "output": "** SIEGE 2.70\n** Preparing 400 concurrent users for battle.\nThe server is now under siege...\nLifting the server siege...-\b      done.\n\bTransactions:\t\t         731 hits\nAvailability:\t\t      100.00 %\nElapsed time:\t\t        9.97 secs\nData transferred:\t        0.01 MB\nResponse time:\t\t        4.02 secs\nTransaction rate:\t       73.32 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t      295.01\nSuccessful transactions:         731\nFailed transactions:\t           0\nLongest transaction:\t        4.77\nShortest transaction:\t        1.85\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 600, 
+                "processes": 1, 
+                "output": "** SIEGE 2.70\n** Preparing 600 concurrent users for battle.\nThe server is now under siege...\nLifting the server siege...-\b      done.\n\bTransactions:\t\t         567 hits\nAvailability:\t\t      100.00 %\nElapsed time:\t\t        9.97 secs\nData transferred:\t        0.01 MB\nResponse time:\t\t        4.43 secs\nTransaction rate:\t       56.87 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t      252.18\nSuccessful transactions:         567\nFailed transactions:\t           0\nLongest transaction:\t        9.29\nShortest transaction:\t        1.16\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 800, 
+                "processes": 1, 
+                "output": "** SIEGE 2.70\n** Preparing 800 concurrent users for battle.\nThe server is now under siege...\nLifting the server siege...-\b      done.\n\bTransactions:\t\t         485 hits\nAvailability:\t\t      100.00 %\nElapsed time:\t\t        9.96 secs\nData transferred:\t        0.01 MB\nResponse time:\t\t        5.61 secs\nTransaction rate:\t       48.69 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t      273.19\nSuccessful transactions:         485\nFailed transactions:\t           0\nLongest transaction:\t        7.88\nShortest transaction:\t        2.26\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 1000, 
+                "processes": 1, 
+                "output": "** SIEGE 2.70\n** Preparing 1000 concurrent users for battle.\nThe server is now under siege...\nLifting the server siege...-\b      done.\n\bTransactions:\t\t         394 hits\nAvailability:\t\t      100.00 %\nElapsed time:\t\t        9.96 secs\nData transferred:\t        0.01 MB\nResponse time:\t\t        6.51 secs\nTransaction rate:\t       39.56 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t      257.62\nSuccessful transactions:         394\nFailed transactions:\t           0\nLongest transaction:\t        8.48\nShortest transaction:\t        0.00\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 200, 
+                "processes": 2, 
+                "output": "** SIEGE 2.70\n** Preparing 200 concurrent users for battle.\nThe server is now under siege...\nLifting the server siege...-\b      done.\n\bTransactions:\t\t         913 hits\nAvailability:\t\t      100.00 %\nElapsed time:\t\t        9.90 secs\nData transferred:\t        0.01 MB\nResponse time:\t\t        1.44 secs\nTransaction rate:\t       92.22 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t      133.22\nSuccessful transactions:         913\nFailed transactions:\t           0\nLongest transaction:\t        3.37\nShortest transaction:\t        0.54\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 400, 
+                "processes": 2, 
+                "output": "** SIEGE 2.70\n** Preparing 400 concurrent users for battle.\nThe server is now under siege...\nLifting the server siege...-\b      done.\n\bTransactions:\t\t         752 hits\nAvailability:\t\t      100.00 %\nElapsed time:\t\t        9.96 secs\nData transferred:\t        0.01 MB\nResponse time:\t\t        3.75 secs\nTransaction rate:\t       75.50 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t      283.09\nSuccessful transactions:         752\nFailed transactions:\t           0\nLongest transaction:\t        5.56\nShortest transaction:\t        1.38\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 600, 
+                "processes": 2, 
+                "output": "** SIEGE 2.70\n** Preparing 600 concurrent users for battle.\nThe server is now under siege...\nLifting the server siege...-\b      done.\n\bTransactions:\t\t         724 hits\nAvailability:\t\t      100.00 %\nElapsed time:\t\t        9.97 secs\nData transferred:\t        0.01 MB\nResponse time:\t\t        5.79 secs\nTransaction rate:\t       72.62 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t      420.72\nSuccessful transactions:         724\nFailed transactions:\t           0\nLongest transaction:\t        9.58\nShortest transaction:\t        0.90\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 800, 
+                "processes": 2, 
+                "output": "** SIEGE 2.70\n** Preparing 800 concurrent users for battle.\nThe server is now under siege...\nLifting the server siege...-\b      done.\n\bTransactions:\t\t         514 hits\nAvailability:\t\t      100.00 %\nElapsed time:\t\t        9.99 secs\nData transferred:\t        0.01 MB\nResponse time:\t\t        6.37 secs\nTransaction rate:\t       51.45 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t      327.58\nSuccessful transactions:         514\nFailed transactions:\t           0\nLongest transaction:\t        9.52\nShortest transaction:\t        2.70\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 1000, 
+                "processes": 2, 
+                "output": "** SIEGE 2.70\n** Preparing 1000 concurrent users for battle.\nThe server is now under siege...socket: connection timed out\nsocket: connection timed out\n\nLifting the server siege...-\b      done.\n\bTransactions:\t\t         398 hits\nAvailability:\t\t       99.50 %\nElapsed time:\t\t        9.96 secs\nData transferred:\t        0.01 MB\nResponse time:\t\t        6.76 secs\nTransaction rate:\t       39.96 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t      270.11\nSuccessful transactions:         398\nFailed transactions:\t           2\nLongest transaction:\t        9.35\nShortest transaction:\t        0.00\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": -1, 
+                "processes": 4, 
+                "output": "PingError"
+            }, 
+            {
+                "concurrent": 200, 
+                "processes": 8, 
+                "output": "** SIEGE 2.70\n** Preparing 200 concurrent users for battle.\nThe server is now under siege...\nLifting the server siege...-\b      done.\n\bTransactions:\t\t         907 hits\nAvailability:\t\t      100.00 %\nElapsed time:\t\t        9.70 secs\nData transferred:\t        0.01 MB\nResponse time:\t\t        1.51 secs\nTransaction rate:\t       93.51 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t      141.20\nSuccessful transactions:         907\nFailed transactions:\t           0\nLongest transaction:\t        2.43\nShortest transaction:\t        0.82\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 400, 
+                "processes": 8, 
+                "output": "** SIEGE 2.70\n** Preparing 400 concurrent users for battle.\nThe server is now under siege...\nLifting the server siege...-\b      done.\n\bTransactions:\t\t         805 hits\nAvailability:\t\t      100.00 %\nElapsed time:\t\t        9.98 secs\nData transferred:\t        0.01 MB\nResponse time:\t\t        3.66 secs\nTransaction rate:\t       80.66 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t      295.30\nSuccessful transactions:         805\nFailed transactions:\t           0\nLongest transaction:\t        8.83\nShortest transaction:\t        0.76\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 600, 
+                "processes": 8, 
+                "output": "** SIEGE 2.70\n** Preparing 600 concurrent users for battle.\nThe server is now under siege...\nLifting the server siege...-\b      done.\n\bTransactions:\t\t         542 hits\nAvailability:\t\t      100.00 %\nElapsed time:\t\t        9.96 secs\nData transferred:\t        0.01 MB\nResponse time:\t\t        7.17 secs\nTransaction rate:\t       54.42 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t      390.27\nSuccessful transactions:         542\nFailed transactions:\t           0\nLongest transaction:\t        8.70\nShortest transaction:\t        0.00\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 800, 
+                "processes": 8, 
+                "output": "** SIEGE 2.70\n** Preparing 800 concurrent users for battle.\nThe server is now under siege...\nLifting the server siege...-\b      done.\n\bTransactions:\t\t         375 hits\nAvailability:\t\t      100.00 %\nElapsed time:\t\t        9.96 secs\nData transferred:\t        0.01 MB\nResponse time:\t\t        5.28 secs\nTransaction rate:\t       37.65 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t      198.95\nSuccessful transactions:         375\nFailed transactions:\t           0\nLongest transaction:\t        8.40\nShortest transaction:\t        0.00\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 1000, 
+                "processes": 8, 
+                "output": "** SIEGE 2.70\n** Preparing 1000 concurrent users for battle.\nThe server is now under siege...socket: connection timed out\nsocket: connection timed out\n\nLifting the server siege...-\b      done.\n\bTransactions:\t\t         452 hits\nAvailability:\t\t       99.56 %\nElapsed time:\t\t        9.96 secs\nData transferred:\t        0.01 MB\nResponse time:\t\t        6.24 secs\nTransaction rate:\t       45.38 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t      282.99\nSuccessful transactions:         452\nFailed transactions:\t           2\nLongest transaction:\t        8.73\nShortest transaction:\t        0.00\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 200, 
+                "processes": 16, 
+                "output": "** SIEGE 2.70\n** Preparing 200 concurrent users for battle.\nThe server is now under siege...\nLifting the server siege...-\b      done.\n\bTransactions:\t\t         743 hits\nAvailability:\t\t      100.00 %\nElapsed time:\t\t        9.05 secs\nData transferred:\t        0.01 MB\nResponse time:\t\t        1.63 secs\nTransaction rate:\t       82.10 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t      133.69\nSuccessful transactions:         743\nFailed transactions:\t           0\nLongest transaction:\t        2.73\nShortest transaction:\t        0.88\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 400, 
+                "processes": 16, 
+                "output": "** SIEGE 2.70\n** Preparing 400 concurrent users for battle.\nThe server is now under siege...\nLifting the server siege...-\b      done.\n\bTransactions:\t\t         644 hits\nAvailability:\t\t      100.00 %\nElapsed time:\t\t        9.98 secs\nData transferred:\t        0.01 MB\nResponse time:\t\t        3.91 secs\nTransaction rate:\t       64.53 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t      252.55\nSuccessful transactions:         644\nFailed transactions:\t           0\nLongest transaction:\t        5.35\nShortest transaction:\t        2.58\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 600, 
+                "processes": 16, 
+                "output": "** SIEGE 2.70\n** Preparing 600 concurrent users for battle.\nThe server is now under siege...\nLifting the server siege...-\b      done.\n\bTransactions:\t\t         469 hits\nAvailability:\t\t      100.00 %\nElapsed time:\t\t        9.98 secs\nData transferred:\t        0.01 MB\nResponse time:\t\t        4.72 secs\nTransaction rate:\t       46.99 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t      221.87\nSuccessful transactions:         469\nFailed transactions:\t           0\nLongest transaction:\t        8.96\nShortest transaction:\t        0.00\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 800, 
+                "processes": 16, 
+                "output": "** SIEGE 2.70\n** Preparing 800 concurrent users for battle.\nThe server is now under siege...\nLifting the server siege...-\b      done.\n\bTransactions:\t\t         494 hits\nAvailability:\t\t      100.00 %\nElapsed time:\t\t        9.96 secs\nData transferred:\t        0.01 MB\nResponse time:\t\t        5.93 secs\nTransaction rate:\t       49.60 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t      294.29\nSuccessful transactions:         494\nFailed transactions:\t           0\nLongest transaction:\t        7.81\nShortest transaction:\t        0.00\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 1000, 
+                "processes": 16, 
+                "output": "** SIEGE 2.70\n** Preparing 1000 concurrent users for battle.\nThe server is now under siege...\nLifting the server siege...-\b      done.\n\bTransactions:\t\t         257 hits\nAvailability:\t\t      100.00 %\nElapsed time:\t\t        9.94 secs\nData transferred:\t        0.00 MB\nResponse time:\t\t        6.99 secs\nTransaction rate:\t       25.86 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t      180.68\nSuccessful transactions:         257\nFailed transactions:\t           0\nLongest transaction:\t        9.86\nShortest transaction:\t        0.00\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 200, 
+                "processes": 32, 
+                "output": "** SIEGE 2.70\n** Preparing 200 concurrent users for battle.\nThe server is now under siege...\nLifting the server siege...-\b      done.\n\bTransactions:\t\t         804 hits\nAvailability:\t\t      100.00 %\nElapsed time:\t\t        9.33 secs\nData transferred:\t        0.01 MB\nResponse time:\t\t        1.60 secs\nTransaction rate:\t       86.17 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t      137.49\nSuccessful transactions:         804\nFailed transactions:\t           0\nLongest transaction:\t        2.30\nShortest transaction:\t        0.73\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 400, 
+                "processes": 32, 
+                "output": "** SIEGE 2.70\n** Preparing 400 concurrent users for battle.\nThe server is now under siege...\nLifting the server siege...-\b      done.\n\bTransactions:\t\t         705 hits\nAvailability:\t\t      100.00 %\nElapsed time:\t\t        9.98 secs\nData transferred:\t        0.01 MB\nResponse time:\t\t        3.91 secs\nTransaction rate:\t       70.64 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t      275.98\nSuccessful transactions:         705\nFailed transactions:\t           0\nLongest transaction:\t        5.93\nShortest transaction:\t        1.85\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 600, 
+                "processes": 32, 
+                "output": "** SIEGE 2.70\n** Preparing 600 concurrent users for battle.\nThe server is now under siege...\nLifting the server siege...-\b\\\b      done.\n\bTransactions:\t\t         551 hits\nAvailability:\t\t      100.00 %\nElapsed time:\t\t        9.96 secs\nData transferred:\t        0.01 MB\nResponse time:\t\t        6.70 secs\nTransaction rate:\t       55.32 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t      370.72\nSuccessful transactions:         551\nFailed transactions:\t           0\nLongest transaction:\t        9.32\nShortest transaction:\t        2.78\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 800, 
+                "processes": 32, 
+                "output": "** SIEGE 2.70\n** Preparing 800 concurrent users for battle.\nThe server is now under siege...\nLifting the server siege...-\b      done.\n\bTransactions:\t\t         474 hits\nAvailability:\t\t      100.00 %\nElapsed time:\t\t        9.98 secs\nData transferred:\t        0.01 MB\nResponse time:\t\t        5.71 secs\nTransaction rate:\t       47.49 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t      271.37\nSuccessful transactions:         474\nFailed transactions:\t           0\nLongest transaction:\t        9.66\nShortest transaction:\t        1.38\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 1000, 
+                "processes": 32, 
+                "output": "** SIEGE 2.70\n** Preparing 1000 concurrent users for battle.\nThe server is now under siege...socket: connection timed out\nsocket: connection timed out\nsocket: connection timed out\nsocket: connection timed out\n\nLifting the server siege...-\b      done.\n\bTransactions:\t\t         467 hits\nAvailability:\t\t       94.73 %\nElapsed time:\t\t        9.96 secs\nData transferred:\t        0.01 MB\nResponse time:\t\t        6.30 secs\nTransaction rate:\t       46.89 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t      295.21\nSuccessful transactions:         467\nFailed transactions:\t          26\nLongest transaction:\t        8.67\nShortest transaction:\t        2.70\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 200, 
+                "processes": 64, 
+                "output": "** SIEGE 2.70\n** Preparing 200 concurrent users for battle.\nThe server is now under siege...\nLifting the server siege...-\b      done.\n\bTransactions:\t\t         759 hits\nAvailability:\t\t      100.00 %\nElapsed time:\t\t        9.73 secs\nData transferred:\t        0.01 MB\nResponse time:\t\t        1.70 secs\nTransaction rate:\t       78.01 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t      132.32\nSuccessful transactions:         759\nFailed transactions:\t           0\nLongest transaction:\t        2.42\nShortest transaction:\t        0.94\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 400, 
+                "processes": 64, 
+                "output": "** SIEGE 2.70\n** Preparing 400 concurrent users for battle.\nThe server is now under siege...\nLifting the server siege...-\b      done.\n\bTransactions:\t\t         687 hits\nAvailability:\t\t      100.00 %\nElapsed time:\t\t        9.97 secs\nData transferred:\t        0.01 MB\nResponse time:\t\t        3.79 secs\nTransaction rate:\t       68.91 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t      261.14\nSuccessful transactions:         687\nFailed transactions:\t           0\nLongest transaction:\t        8.31\nShortest transaction:\t        1.04\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 600, 
+                "processes": 64, 
+                "output": "** SIEGE 2.70\n** Preparing 600 concurrent users for battle.\nThe server is now under siege...\nLifting the server siege...-\b      done.\n\bTransactions:\t\t         468 hits\nAvailability:\t\t      100.00 %\nElapsed time:\t\t        9.98 secs\nData transferred:\t        0.01 MB\nResponse time:\t\t        5.80 secs\nTransaction rate:\t       46.89 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t      272.03\nSuccessful transactions:         468\nFailed transactions:\t           0\nLongest transaction:\t        8.15\nShortest transaction:\t        3.31\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 800, 
+                "processes": 64, 
+                "output": "** SIEGE 2.70\n** Preparing 800 concurrent users for battle.\nThe server is now under siege...\nLifting the server siege...-\b      done.\n\bTransactions:\t\t         530 hits\nAvailability:\t\t      100.00 %\nElapsed time:\t\t        9.96 secs\nData transferred:\t        0.01 MB\nResponse time:\t\t        6.49 secs\nTransaction rate:\t       53.21 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t      345.57\nSuccessful transactions:         530\nFailed transactions:\t           0\nLongest transaction:\t        9.31\nShortest transaction:\t        0.00\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 1000, 
+                "processes": 64, 
+                "output": "** SIEGE 2.70\n** Preparing 1000 concurrent users for battle.\nThe server is now under siege...\nLifting the server siege...-\b      done.\n\bTransactions:\t\t         146 hits\nAvailability:\t\t      100.00 %\nElapsed time:\t\t        9.97 secs\nData transferred:\t        0.00 MB\nResponse time:\t\t        7.35 secs\nTransaction rate:\t       14.64 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t      107.59\nSuccessful transactions:         146\nFailed transactions:\t           0\nLongest transaction:\t        8.71\nShortest transaction:\t        0.00\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }
+        ]
+    }, 
+    "test_tornado.py": {
+        "cmd_tmpl": "python test_tornado.py --port=%(port)d --processes=%(processes)d  2>/dev/null 1>/dev/null", 
+        "port": 8001, 
+        "results": [
+            {
+                "concurrent": 200, 
+                "processes": 1, 
+                "output": "** SIEGE 2.70\n** Preparing 200 concurrent users for battle.\nThe server is now under siege...\nLifting the server siege...-\b      done.\n\bTransactions:\t\t        2470 hits\nAvailability:\t\t      100.00 %\nElapsed time:\t\t        9.73 secs\nData transferred:\t        0.01 MB\nResponse time:\t\t        0.28 secs\nTransaction rate:\t      253.85 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t       70.02\nSuccessful transactions:        2470\nFailed transactions:\t           0\nLongest transaction:\t        0.51\nShortest transaction:\t        0.20\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 400, 
+                "processes": 1, 
+                "output": "** SIEGE 2.70\n** Preparing 400 concurrent users for battle.\nThe server is now under siege...\nLifting the server siege...-\b      done.\n\bTransactions:\t\t        3403 hits\nAvailability:\t\t      100.00 %\nElapsed time:\t\t        9.95 secs\nData transferred:\t        0.02 MB\nResponse time:\t\t        0.64 secs\nTransaction rate:\t      342.01 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t      218.58\nSuccessful transactions:        3403\nFailed transactions:\t           0\nLongest transaction:\t        3.64\nShortest transaction:\t        0.26\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 600, 
+                "processes": 1, 
+                "output": "** SIEGE 2.70\n** Preparing 600 concurrent users for battle.\nThe server is now under siege...\nLifting the server siege...-\b\\\b      done.\n\bTransactions:\t\t        3269 hits\nAvailability:\t\t      100.00 %\nElapsed time:\t\t        9.96 secs\nData transferred:\t        0.02 MB\nResponse time:\t\t        1.18 secs\nTransaction rate:\t      328.21 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t      388.78\nSuccessful transactions:        3269\nFailed transactions:\t           0\nLongest transaction:\t        4.58\nShortest transaction:\t        0.29\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 800, 
+                "processes": 1, 
+                "output": "** SIEGE 2.70\n** Preparing 800 concurrent users for battle.\nThe server is now under siege...[\u001b[1;33merror\u001b[0m] socket: unable to connect sock.c:222: Operation already in progress\n[\u001b[1;33merror\u001b[0m] socket: unable to connect sock.c:222: Operation already in progress\n\nLifting the server siege...-\b\\\b      done.\n\bTransactions:\t\t        3005 hits\nAvailability:\t\t       99.93 %\nElapsed time:\t\t        9.97 secs\nData transferred:\t        0.01 MB\nResponse time:\t\t        1.82 secs\nTransaction rate:\t      301.40 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t      548.14\nSuccessful transactions:        3005\nFailed transactions:\t           2\nLongest transaction:\t        8.68\nShortest transaction:\t        0.21\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 1000, 
+                "processes": 1, 
+                "output": "** SIEGE 2.70\n** Preparing 1000 concurrent users for battle.\nThe server is now under siege...\nLifting the server siege...-\b      done.\n\bTransactions:\t\t        2972 hits\nAvailability:\t\t      100.00 %\nElapsed time:\t\t        9.94 secs\nData transferred:\t        0.01 MB\nResponse time:\t\t        2.23 secs\nTransaction rate:\t      298.99 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t      667.73\nSuccessful transactions:        2972\nFailed transactions:\t           0\nLongest transaction:\t        9.62\nShortest transaction:\t        0.31\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 200, 
+                "processes": 2, 
+                "output": "** SIEGE 2.70\n** Preparing 200 concurrent users for battle.\nThe server is now under siege...\nLifting the server siege...-\b      done.\n\bTransactions:\t\t        2342 hits\nAvailability:\t\t      100.00 %\nElapsed time:\t\t        9.31 secs\nData transferred:\t        0.01 MB\nResponse time:\t\t        0.27 secs\nTransaction rate:\t      251.56 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t       68.33\nSuccessful transactions:        2342\nFailed transactions:\t           0\nLongest transaction:\t        0.57\nShortest transaction:\t        0.20\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 400, 
+                "processes": 2, 
+                "output": "** SIEGE 2.70\n** Preparing 400 concurrent users for battle.\nThe server is now under siege...\nLifting the server siege...-\b      done.\n\bTransactions:\t\t        3333 hits\nAvailability:\t\t      100.00 %\nElapsed time:\t\t        9.95 secs\nData transferred:\t        0.02 MB\nResponse time:\t\t        0.64 secs\nTransaction rate:\t      334.97 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t      214.42\nSuccessful transactions:        3333\nFailed transactions:\t           0\nLongest transaction:\t        1.73\nShortest transaction:\t        0.25\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 600, 
+                "processes": 2, 
+                "output": "** SIEGE 2.70\n** Preparing 600 concurrent users for battle.\nThe server is now under siege...\nLifting the server siege...-\b      done.\n\bTransactions:\t\t        3351 hits\nAvailability:\t\t      100.00 %\nElapsed time:\t\t        9.98 secs\nData transferred:\t        0.02 MB\nResponse time:\t\t        1.12 secs\nTransaction rate:\t      335.77 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t      374.89\nSuccessful transactions:        3351\nFailed transactions:\t           0\nLongest transaction:\t        4.14\nShortest transaction:\t        0.28\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 800, 
+                "processes": 2, 
+                "output": "** SIEGE 2.70\n** Preparing 800 concurrent users for battle.\nThe server is now under siege...\nLifting the server siege...-\b      done.\n\bTransactions:\t\t        3012 hits\nAvailability:\t\t      100.00 %\nElapsed time:\t\t        9.96 secs\nData transferred:\t        0.01 MB\nResponse time:\t\t        1.78 secs\nTransaction rate:\t      302.41 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t      537.91\nSuccessful transactions:        3012\nFailed transactions:\t           0\nLongest transaction:\t        4.58\nShortest transaction:\t        0.34\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 1000, 
+                "processes": 2, 
+                "output": "** SIEGE 2.70\n** Preparing 1000 concurrent users for battle.\nThe server is now under siege...\nLifting the server siege...-\b      done.\n\bTransactions:\t\t        3179 hits\nAvailability:\t\t      100.00 %\nElapsed time:\t\t        9.95 secs\nData transferred:\t        0.02 MB\nResponse time:\t\t        2.12 secs\nTransaction rate:\t      319.50 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t      675.85\nSuccessful transactions:        3179\nFailed transactions:\t           0\nLongest transaction:\t        8.85\nShortest transaction:\t        0.35\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 200, 
+                "processes": 4, 
+                "output": "** SIEGE 2.70\n** Preparing 200 concurrent users for battle.\nThe server is now under siege...\nLifting the server siege...-\b      done.\n\bTransactions:\t\t        2426 hits\nAvailability:\t\t      100.00 %\nElapsed time:\t\t        9.66 secs\nData transferred:\t        0.01 MB\nResponse time:\t\t        0.27 secs\nTransaction rate:\t      251.14 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t       68.97\nSuccessful transactions:        2426\nFailed transactions:\t           0\nLongest transaction:\t        0.60\nShortest transaction:\t        0.20\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 400, 
+                "processes": 4, 
+                "output": "** SIEGE 2.70\n** Preparing 400 concurrent users for battle.\nThe server is now under siege...\nLifting the server siege...-\b      done.\n\bTransactions:\t\t        3259 hits\nAvailability:\t\t      100.00 %\nElapsed time:\t\t        9.96 secs\nData transferred:\t        0.02 MB\nResponse time:\t\t        0.66 secs\nTransaction rate:\t      327.21 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t      215.34\nSuccessful transactions:        3259\nFailed transactions:\t           0\nLongest transaction:\t        1.82\nShortest transaction:\t        0.25\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 600, 
+                "processes": 4, 
+                "output": "** SIEGE 2.70\n** Preparing 600 concurrent users for battle.\nThe server is now under siege...\nLifting the server siege...-\b      done.\n\bTransactions:\t\t        3385 hits\nAvailability:\t\t      100.00 %\nElapsed time:\t\t        9.96 secs\nData transferred:\t        0.02 MB\nResponse time:\t\t        1.14 secs\nTransaction rate:\t      339.86 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t      389.13\nSuccessful transactions:        3385\nFailed transactions:\t           0\nLongest transaction:\t        4.19\nShortest transaction:\t        0.53\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 800, 
+                "processes": 4, 
+                "output": "** SIEGE 2.70\n** Preparing 800 concurrent users for battle.\nThe server is now under siege...[\u001b[1;33merror\u001b[0m] socket: unable to connect sock.c:222: Operation already in progress\n[\u001b[1;33merror\u001b[0m] socket: unable to connect sock.c:222: Operation already in progress\n\nLifting the server siege...-\b      done.\n\bTransactions:\t\t        3077 hits\nAvailability:\t\t       99.94 %\nElapsed time:\t\t        9.96 secs\nData transferred:\t        0.01 MB\nResponse time:\t\t        1.77 secs\nTransaction rate:\t      308.94 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t      547.37\nSuccessful transactions:        3077\nFailed transactions:\t           2\nLongest transaction:\t        4.83\nShortest transaction:\t        0.35\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 1000, 
+                "processes": 4, 
+                "output": "** SIEGE 2.70\n** Preparing 1000 concurrent users for battle.\nThe server is now under siege...socket: connection timed out\nsocket: connection timed out\nsocket: connection timed out\n\nLifting the server siege...-\b      done.\n\bTransactions:\t\t        3075 hits\nAvailability:\t\t       99.90 %\nElapsed time:\t\t        9.94 secs\nData transferred:\t        0.01 MB\nResponse time:\t\t        2.10 secs\nTransaction rate:\t      309.36 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t      650.12\nSuccessful transactions:        3075\nFailed transactions:\t           3\nLongest transaction:\t        4.79\nShortest transaction:\t        0.78\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 200, 
+                "processes": 8, 
+                "output": "** SIEGE 2.70\n** Preparing 200 concurrent users for battle.\nThe server is now under siege...\nLifting the server siege...-\b      done.\n\bTransactions:\t\t        2262 hits\nAvailability:\t\t      100.00 %\nElapsed time:\t\t        9.44 secs\nData transferred:\t        0.01 MB\nResponse time:\t\t        0.28 secs\nTransaction rate:\t      239.62 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t       68.24\nSuccessful transactions:        2262\nFailed transactions:\t           0\nLongest transaction:\t        0.51\nShortest transaction:\t        0.20\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 400, 
+                "processes": 8, 
+                "output": "** SIEGE 2.70\n** Preparing 400 concurrent users for battle.\nThe server is now under siege...\nLifting the server siege...-\b      done.\n\bTransactions:\t\t        3159 hits\nAvailability:\t\t      100.00 %\nElapsed time:\t\t        9.97 secs\nData transferred:\t        0.02 MB\nResponse time:\t\t        0.69 secs\nTransaction rate:\t      316.85 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t      218.53\nSuccessful transactions:        3159\nFailed transactions:\t           0\nLongest transaction:\t        3.55\nShortest transaction:\t        0.30\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 600, 
+                "processes": 8, 
+                "output": "** SIEGE 2.70\n** Preparing 600 concurrent users for battle.\nThe server is now under siege...\nLifting the server siege...-\b      done.\n\bTransactions:\t\t        3423 hits\nAvailability:\t\t      100.00 %\nElapsed time:\t\t        9.95 secs\nData transferred:\t        0.02 MB\nResponse time:\t\t        1.09 secs\nTransaction rate:\t      344.02 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t      374.01\nSuccessful transactions:        3423\nFailed transactions:\t           0\nLongest transaction:\t        4.31\nShortest transaction:\t        0.50\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 800, 
+                "processes": 8, 
+                "output": "** SIEGE 2.70\n** Preparing 800 concurrent users for battle.\nThe server is now under siege...\nLifting the server siege...-\b      done.\n\bTransactions:\t\t        3004 hits\nAvailability:\t\t      100.00 %\nElapsed time:\t\t        9.96 secs\nData transferred:\t        0.01 MB\nResponse time:\t\t        1.69 secs\nTransaction rate:\t      301.61 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t      511.19\nSuccessful transactions:        3004\nFailed transactions:\t           0\nLongest transaction:\t        4.48\nShortest transaction:\t        0.36\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 1000, 
+                "processes": 8, 
+                "output": "** SIEGE 2.70\n** Preparing 1000 concurrent users for battle.\nThe server is now under siege...\nLifting the server siege...-\b      done.\n\bTransactions:\t\t        2942 hits\nAvailability:\t\t      100.00 %\nElapsed time:\t\t        9.94 secs\nData transferred:\t        0.01 MB\nResponse time:\t\t        2.13 secs\nTransaction rate:\t      295.98 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t      631.66\nSuccessful transactions:        2942\nFailed transactions:\t           0\nLongest transaction:\t        4.94\nShortest transaction:\t        0.22\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 200, 
+                "processes": 16, 
+                "output": "** SIEGE 2.70\n** Preparing 200 concurrent users for battle.\nThe server is now under siege...\nLifting the server siege...-\b      done.\n\bTransactions:\t\t        2356 hits\nAvailability:\t\t      100.00 %\nElapsed time:\t\t        9.40 secs\nData transferred:\t        0.01 MB\nResponse time:\t\t        0.27 secs\nTransaction rate:\t      250.64 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t       68.38\nSuccessful transactions:        2356\nFailed transactions:\t           0\nLongest transaction:\t        0.53\nShortest transaction:\t        0.20\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 400, 
+                "processes": 16, 
+                "output": "** SIEGE 2.70\n** Preparing 400 concurrent users for battle.\nThe server is now under siege...\nLifting the server siege...-\b      done.\n\bTransactions:\t\t        3390 hits\nAvailability:\t\t      100.00 %\nElapsed time:\t\t        9.96 secs\nData transferred:\t        0.02 MB\nResponse time:\t\t        0.61 secs\nTransaction rate:\t      340.36 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t      208.39\nSuccessful transactions:        3390\nFailed transactions:\t           0\nLongest transaction:\t        1.62\nShortest transaction:\t        0.24\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 600, 
+                "processes": 16, 
+                "output": "** SIEGE 2.70\n** Preparing 600 concurrent users for battle.\nThe server is now under siege...\nLifting the server siege...-\b      done.\n\bTransactions:\t\t        3045 hits\nAvailability:\t\t      100.00 %\nElapsed time:\t\t        9.95 secs\nData transferred:\t        0.01 MB\nResponse time:\t\t        1.19 secs\nTransaction rate:\t      306.03 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t      364.41\nSuccessful transactions:        3046\nFailed transactions:\t           0\nLongest transaction:\t        4.09\nShortest transaction:\t        0.28\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 800, 
+                "processes": 16, 
+                "output": "** SIEGE 2.70\n** Preparing 800 concurrent users for battle.\nThe server is now under siege...\nLifting the server siege...-\b      done.\n\bTransactions:\t\t        3062 hits\nAvailability:\t\t      100.00 %\nElapsed time:\t\t        9.96 secs\nData transferred:\t        0.01 MB\nResponse time:\t\t        1.82 secs\nTransaction rate:\t      307.43 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t      558.50\nSuccessful transactions:        3062\nFailed transactions:\t           0\nLongest transaction:\t        8.65\nShortest transaction:\t        0.23\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 1000, 
+                "processes": 16, 
+                "output": "** SIEGE 2.70\n** Preparing 1000 concurrent users for battle.\nThe server is now under siege...[\u001b[1;33merror\u001b[0m] socket: unable to connect sock.c:222: Operation already in progress\n[\u001b[1;33merror\u001b[0m] socket: unable to connect sock.c:222: Operation already in progress\n[\u001b[1;32malert\u001b[0m] socket: 608700160 select timed out: Bad file descriptor\n\nLifting the server siege...-\b      done.\n\bTransactions:\t\t        3101 hits\nAvailability:\t\t       99.90 %\nElapsed time:\t\t        9.97 secs\nData transferred:\t        0.01 MB\nResponse time:\t\t        1.87 secs\nTransaction rate:\t      311.03 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t      582.60\nSuccessful transactions:        3101\nFailed transactions:\t           3\nLongest transaction:\t        5.02\nShortest transaction:\t        0.23\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 200, 
+                "processes": 32, 
+                "output": "** SIEGE 2.70\n** Preparing 200 concurrent users for battle.\nThe server is now under siege...\nLifting the server siege...-\b      done.\n\bTransactions:\t\t        2412 hits\nAvailability:\t\t      100.00 %\nElapsed time:\t\t        9.40 secs\nData transferred:\t        0.01 MB\nResponse time:\t\t        0.26 secs\nTransaction rate:\t      256.60 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t       67.57\nSuccessful transactions:        2412\nFailed transactions:\t           0\nLongest transaction:\t        0.54\nShortest transaction:\t        0.20\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 400, 
+                "processes": 32, 
+                "output": "** SIEGE 2.70\n** Preparing 400 concurrent users for battle.\nThe server is now under siege...\nLifting the server siege...-\b      done.\n\bTransactions:\t\t        3364 hits\nAvailability:\t\t      100.00 %\nElapsed time:\t\t        9.96 secs\nData transferred:\t        0.02 MB\nResponse time:\t\t        0.63 secs\nTransaction rate:\t      337.75 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t      214.26\nSuccessful transactions:        3364\nFailed transactions:\t           0\nLongest transaction:\t        0.95\nShortest transaction:\t        0.35\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 600, 
+                "processes": 32, 
+                "output": "** SIEGE 2.70\n** Preparing 600 concurrent users for battle.\nThe server is now under siege...\nLifting the server siege...-\b      done.\n\bTransactions:\t\t        3208 hits\nAvailability:\t\t      100.00 %\nElapsed time:\t\t        9.96 secs\nData transferred:\t        0.02 MB\nResponse time:\t\t        1.14 secs\nTransaction rate:\t      322.09 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t      365.77\nSuccessful transactions:        3208\nFailed transactions:\t           0\nLongest transaction:\t        4.18\nShortest transaction:\t        0.26\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 800, 
+                "processes": 32, 
+                "output": "** SIEGE 2.70\n** Preparing 800 concurrent users for battle.\nThe server is now under siege...\nLifting the server siege...-\b      done.\n\bTransactions:\t\t        3110 hits\nAvailability:\t\t      100.00 %\nElapsed time:\t\t        9.97 secs\nData transferred:\t        0.01 MB\nResponse time:\t\t        1.63 secs\nTransaction rate:\t      311.94 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t      508.79\nSuccessful transactions:        3110\nFailed transactions:\t           0\nLongest transaction:\t        4.58\nShortest transaction:\t        0.34\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 1000, 
+                "processes": 32, 
+                "output": "** SIEGE 2.70\n** Preparing 1000 concurrent users for battle.\nThe server is now under siege...[\u001b[1;33merror\u001b[0m] socket: unable to connect sock.c:222: Operation already in progress\n\nLifting the server siege...-\b      done.\n\bTransactions:\t\t        2981 hits\nAvailability:\t\t       99.97 %\nElapsed time:\t\t        9.98 secs\nData transferred:\t        0.01 MB\nResponse time:\t\t        2.19 secs\nTransaction rate:\t      298.70 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t      655.01\nSuccessful transactions:        2981\nFailed transactions:\t           1\nLongest transaction:\t        5.05\nShortest transaction:\t        0.29\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 200, 
+                "processes": 64, 
+                "output": "** SIEGE 2.70\n** Preparing 200 concurrent users for battle.\nThe server is now under siege...\nLifting the server siege...-\b      done.\n\bTransactions:\t\t        2390 hits\nAvailability:\t\t      100.00 %\nElapsed time:\t\t        9.35 secs\nData transferred:\t        0.01 MB\nResponse time:\t\t        0.26 secs\nTransaction rate:\t      255.61 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t       66.62\nSuccessful transactions:        2390\nFailed transactions:\t           0\nLongest transaction:\t        0.57\nShortest transaction:\t        0.20\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 400, 
+                "processes": 64, 
+                "output": "** SIEGE 2.70\n** Preparing 400 concurrent users for battle.\nThe server is now under siege...\nLifting the server siege...-\b      done.\n\bTransactions:\t\t        3376 hits\nAvailability:\t\t      100.00 %\nElapsed time:\t\t        9.96 secs\nData transferred:\t        0.02 MB\nResponse time:\t\t        0.63 secs\nTransaction rate:\t      338.96 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t      214.01\nSuccessful transactions:        3376\nFailed transactions:\t           0\nLongest transaction:\t        1.67\nShortest transaction:\t        0.28\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 600, 
+                "processes": 64, 
+                "output": "** SIEGE 2.70\n** Preparing 600 concurrent users for battle.\nThe server is now under siege...\nLifting the server siege...-\b      done.\n\bTransactions:\t\t        3384 hits\nAvailability:\t\t      100.00 %\nElapsed time:\t\t        9.95 secs\nData transferred:\t        0.02 MB\nResponse time:\t\t        1.13 secs\nTransaction rate:\t      340.10 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t      384.23\nSuccessful transactions:        3384\nFailed transactions:\t           0\nLongest transaction:\t        2.63\nShortest transaction:\t        0.61\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 800, 
+                "processes": 64, 
+                "output": "** SIEGE 2.70\n** Preparing 800 concurrent users for battle.\nThe server is now under siege...\nLifting the server siege...-\b      done.\n\bTransactions:\t\t        3157 hits\nAvailability:\t\t      100.00 %\nElapsed time:\t\t        9.95 secs\nData transferred:\t        0.02 MB\nResponse time:\t\t        1.69 secs\nTransaction rate:\t      317.29 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t      535.32\nSuccessful transactions:        3157\nFailed transactions:\t           0\nLongest transaction:\t        7.86\nShortest transaction:\t        0.39\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }, 
+            {
+                "concurrent": 1000, 
+                "processes": 64, 
+                "output": "** SIEGE 2.70\n** Preparing 1000 concurrent users for battle.\nThe server is now under siege...[\u001b[1;33merror\u001b[0m] socket: unable to connect sock.c:222: Operation already in progress\n[\u001b[1;33merror\u001b[0m] socket: unable to connect sock.c:222: Operation already in progress\n[\u001b[1;33merror\u001b[0m] socket: unable to connect sock.c:222: Operation already in progress\n[\u001b[1;33merror\u001b[0m] socket: unable to connect sock.c:222: Operation already in progress\n[\u001b[1;33merror\u001b[0m] socket: unable to connect sock.c:222: Operation already in progress\n[\u001b[1;33merror\u001b[0m] socket: unable to connect sock.c:222: Operation already in progress\n[\u001b[1;33merror\u001b[0m] socket: unable to connect sock.c:222: Operation already in progress\n\nLifting the server siege...-\b      done.\n\bTransactions:\t\t        3161 hits\nAvailability:\t\t       99.78 %\nElapsed time:\t\t        9.95 secs\nData transferred:\t        0.02 MB\nResponse time:\t\t        2.13 secs\nTransaction rate:\t      317.69 trans/sec\nThroughput:\t\t        0.00 MB/sec\nConcurrency:\t\t      675.23\nSuccessful transactions:        3161\nFailed transactions:\t           7\nLongest transaction:\t        5.57\nShortest transaction:\t        0.39\n \nFILE: /var/log/siege.log\nYou can disable this annoying message by editing\nthe .siegerc file in your home directory; change\nthe directive 'show-logfile' to false."
+            }
+        ]
+    }
+}

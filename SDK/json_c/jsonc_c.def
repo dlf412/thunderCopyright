@@ -1,0 +1,15 @@
+LIBRARY	"json_c"
+	EXPORTS
+	json_tokener_parse
+	json_object_object_get
+	json_object_get_int
+	json_object_get_string
+	json_object_get_array
+	json_object_object_add
+	json_object_new_string
+	json_object_new_int
+	json_object_new_boolean
+	json_object_new_object
+	json_object_put
+	json_object_array_get_idx
+	json_object_from_file

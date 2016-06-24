@@ -1,0 +1,33 @@
+{
+  "jsonrpc": "2.0",
+  "id": 1,
+  "method": "submit_task",
+  "params":
+ { 
+      "process" : 0, 
+      "priority" : "low", 
+      "additional_info" : {
+          "client_id" : "3029HFGEWAABC",
+          "client_address" : "http://url.net"
+      },
+      "digest" : "123456",
+      "digest_algorithm" : "sha-1",
+      "file_name" : "transformsers-4.mp4",
+      "file_size" : 1486244214,
+      "host_name": "aliyun007", 
+      "refer" : "http://www.123.net" ,
+      "url": {
+          "location": "http://host:port/video.mp4", 
+          "hash": "3029HFGHEWAABCDEFG"
+       },
+      "seed_file":{
+          "seed_encoded": false,
+           "path" : "/dsdsdsdsd.torrent",
+          "content": "torrent content, utf-8 encoded tex", 
+          "hash": "3029HFGHEWAABIU098VW" 
+      },
+      "thunder_hash": "3029HFGHEWR9F3HR0", 
+      "mime_type": "video/mp4",
+      "protocol": "http"
+   }
+}

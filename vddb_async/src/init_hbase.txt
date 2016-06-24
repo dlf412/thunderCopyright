@@ -1,0 +1,18 @@
+# init hbase table
+create 'task' , 'i' , 's'
+
+create 'matches' , 'm'
+
+create 'finished' , 'f'
+
+create 'unpush' , 'u'
+
+create 'sid_tid' , 't'
+
+create 'tid_sid' , 't'
+
+create 'crr' , 'c'
+
+create 'task_info', 't'
+
+create 'parent_task' , 'p'

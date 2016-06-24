@@ -1,0 +1,655 @@
+{
+    "INFO": {
+        "SECONDS": 10, 
+        "CONCURRENTS": [
+            400, 
+            600, 
+            800, 
+            1000, 
+            1600
+        ], 
+        "PROCESSES_LST": [
+            1, 
+            4, 
+            8, 
+            16, 
+            32
+        ], 
+        "TAG": "None", 
+        "TEST_SERVER_HOSTS": [
+            "192.168.40.215", 
+            "192.168.40.91"
+        ], 
+        "APPSERVER_IP": "192.168.3.235"
+    }, 
+    "tests": [
+        {
+            "app": "test_http.go", 
+            "results": [
+                {
+                    "processes": 1, 
+                    "availability(%)_TOTAL": 200.0, 
+                    "transaction-rate(trans/sec)_TOTAL": 1475.12, 
+                    "concurrent": 800
+                }, 
+                {
+                    "processes": 4, 
+                    "availability(%)_TOTAL": 200.0, 
+                    "transaction-rate(trans/sec)_TOTAL": 1534.3400000000001, 
+                    "concurrent": 800
+                }, 
+                {
+                    "processes": 8, 
+                    "availability(%)_TOTAL": 200.0, 
+                    "transaction-rate(trans/sec)_TOTAL": 1609.84, 
+                    "concurrent": 800
+                }, 
+                {
+                    "processes": 16, 
+                    "availability(%)_TOTAL": 200.0, 
+                    "transaction-rate(trans/sec)_TOTAL": 1510.49, 
+                    "concurrent": 800
+                }, 
+                {
+                    "processes": 32, 
+                    "availability(%)_TOTAL": 200.0, 
+                    "transaction-rate(trans/sec)_TOTAL": 1600.96, 
+                    "concurrent": 800
+                }, 
+                {
+                    "processes": 1, 
+                    "availability(%)_TOTAL": 200.0, 
+                    "transaction-rate(trans/sec)_TOTAL": 2309.45, 
+                    "concurrent": 1200
+                }, 
+                {
+                    "processes": 4, 
+                    "availability(%)_TOTAL": 200.0, 
+                    "transaction-rate(trans/sec)_TOTAL": 2261.32, 
+                    "concurrent": 1200
+                }, 
+                {
+                    "processes": 8, 
+                    "availability(%)_TOTAL": 200.0, 
+                    "transaction-rate(trans/sec)_TOTAL": 2272.94, 
+                    "concurrent": 1200
+                }, 
+                {
+                    "processes": 16, 
+                    "availability(%)_TOTAL": 200.0, 
+                    "transaction-rate(trans/sec)_TOTAL": 2311.9700000000003, 
+                    "concurrent": 1200
+                }, 
+                {
+                    "processes": 32, 
+                    "availability(%)_TOTAL": 200.0, 
+                    "transaction-rate(trans/sec)_TOTAL": 2329.84, 
+                    "concurrent": 1200
+                }, 
+                {
+                    "processes": 1, 
+                    "availability(%)_TOTAL": 200.0, 
+                    "transaction-rate(trans/sec)_TOTAL": 3024.46, 
+                    "concurrent": 1600
+                }, 
+                {
+                    "processes": 4, 
+                    "availability(%)_TOTAL": 200.0, 
+                    "transaction-rate(trans/sec)_TOTAL": 3056.59, 
+                    "concurrent": 1600
+                }, 
+                {
+                    "processes": 8, 
+                    "availability(%)_TOTAL": 200.0, 
+                    "transaction-rate(trans/sec)_TOTAL": 3040.37, 
+                    "concurrent": 1600
+                }, 
+                {
+                    "processes": 16, 
+                    "availability(%)_TOTAL": 199.97, 
+                    "transaction-rate(trans/sec)_TOTAL": 3060.1000000000004, 
+                    "concurrent": 1600
+                }, 
+                {
+                    "processes": 32, 
+                    "availability(%)_TOTAL": 200.0, 
+                    "transaction-rate(trans/sec)_TOTAL": 3027.6099999999997, 
+                    "concurrent": 1600
+                }, 
+                {
+                    "processes": 1, 
+                    "availability(%)_TOTAL": 200.0, 
+                    "transaction-rate(trans/sec)_TOTAL": 3801.37, 
+                    "concurrent": 2000
+                }, 
+                {
+                    "processes": 4, 
+                    "availability(%)_TOTAL": 200.0, 
+                    "transaction-rate(trans/sec)_TOTAL": 3796.92, 
+                    "concurrent": 2000
+                }, 
+                {
+                    "processes": 8, 
+                    "availability(%)_TOTAL": 199.68, 
+                    "transaction-rate(trans/sec)_TOTAL": 3801.95, 
+                    "concurrent": 2000
+                }, 
+                {
+                    "processes": 16, 
+                    "availability(%)_TOTAL": 200.0, 
+                    "transaction-rate(trans/sec)_TOTAL": 3794.67, 
+                    "concurrent": 2000
+                }, 
+                {
+                    "processes": 32, 
+                    "availability(%)_TOTAL": 199.97, 
+                    "transaction-rate(trans/sec)_TOTAL": 3821.98, 
+                    "concurrent": 2000
+                }, 
+                {
+                    "processes": 1, 
+                    "availability(%)_TOTAL": 199.6, 
+                    "transaction-rate(trans/sec)_TOTAL": 5175.74, 
+                    "concurrent": 3200
+                }, 
+                {
+                    "processes": 4, 
+                    "availability(%)_TOTAL": 199.48000000000002, 
+                    "transaction-rate(trans/sec)_TOTAL": 5172.6, 
+                    "concurrent": 3200
+                }, 
+                {
+                    "processes": 8, 
+                    "availability(%)_TOTAL": 199.14, 
+                    "transaction-rate(trans/sec)_TOTAL": 5222.06, 
+                    "concurrent": 3200
+                }, 
+                {
+                    "processes": 16, 
+                    "availability(%)_TOTAL": 199.78, 
+                    "transaction-rate(trans/sec)_TOTAL": 5258.23, 
+                    "concurrent": 3200
+                }, 
+                {
+                    "processes": 32, 
+                    "availability(%)_TOTAL": 199.97, 
+                    "transaction-rate(trans/sec)_TOTAL": 5279.41, 
+                    "concurrent": 3200
+                }
+            ], 
+            "cmd_tmpl": "./webapps/test_http.bin -port=%(port)d -size=%(processes)d 2>/dev/null 1>/dev/null", 
+            "port": 9001
+        }, 
+        {
+            "app": "test_martini.go", 
+            "results": [
+                {
+                    "processes": 1, 
+                    "availability(%)_TOTAL": 200.0, 
+                    "transaction-rate(trans/sec)_TOTAL": 1101.8600000000001, 
+                    "concurrent": 800
+                }, 
+                {
+                    "processes": 4, 
+                    "availability(%)_TOTAL": 200.0, 
+                    "transaction-rate(trans/sec)_TOTAL": 1101.4, 
+                    "concurrent": 800
+                }, 
+                {
+                    "processes": 8, 
+                    "availability(%)_TOTAL": 200.0, 
+                    "transaction-rate(trans/sec)_TOTAL": 1116.6599999999999, 
+                    "concurrent": 800
+                }, 
+                {
+                    "processes": 16, 
+                    "availability(%)_TOTAL": 200.0, 
+                    "transaction-rate(trans/sec)_TOTAL": 1103.13, 
+                    "concurrent": 800
+                }, 
+                {
+                    "processes": 32, 
+                    "availability(%)_TOTAL": 200.0, 
+                    "transaction-rate(trans/sec)_TOTAL": 1114.0700000000002, 
+                    "concurrent": 800
+                }, 
+                {
+                    "processes": 1, 
+                    "availability(%)_TOTAL": 200.0, 
+                    "transaction-rate(trans/sec)_TOTAL": 1634.88, 
+                    "concurrent": 1200
+                }, 
+                {
+                    "processes": 4, 
+                    "availability(%)_TOTAL": 200.0, 
+                    "transaction-rate(trans/sec)_TOTAL": 1651.25, 
+                    "concurrent": 1200
+                }, 
+                {
+                    "processes": 8, 
+                    "availability(%)_TOTAL": 200.0, 
+                    "transaction-rate(trans/sec)_TOTAL": 1691.98, 
+                    "concurrent": 1200
+                }, 
+                {
+                    "processes": 16, 
+                    "availability(%)_TOTAL": 200.0, 
+                    "transaction-rate(trans/sec)_TOTAL": 1657.6599999999999, 
+                    "concurrent": 1200
+                }, 
+                {
+                    "processes": 32, 
+                    "availability(%)_TOTAL": 200.0, 
+                    "transaction-rate(trans/sec)_TOTAL": 1658.51, 
+                    "concurrent": 1200
+                }, 
+                {
+                    "processes": 1, 
+                    "availability(%)_TOTAL": 200.0, 
+                    "transaction-rate(trans/sec)_TOTAL": 2131.89, 
+                    "concurrent": 1600
+                }, 
+                {
+                    "processes": 4, 
+                    "availability(%)_TOTAL": 200.0, 
+                    "transaction-rate(trans/sec)_TOTAL": 2204.0299999999997, 
+                    "concurrent": 1600
+                }, 
+                {
+                    "processes": 8, 
+                    "availability(%)_TOTAL": 200.0, 
+                    "transaction-rate(trans/sec)_TOTAL": 2194.11, 
+                    "concurrent": 1600
+                }, 
+                {
+                    "processes": 16, 
+                    "availability(%)_TOTAL": 200.0, 
+                    "transaction-rate(trans/sec)_TOTAL": 2212.36, 
+                    "concurrent": 1600
+                }, 
+                {
+                    "processes": 32, 
+                    "availability(%)_TOTAL": 200.0, 
+                    "transaction-rate(trans/sec)_TOTAL": 2173.12, 
+                    "concurrent": 1600
+                }, 
+                {
+                    "processes": 1, 
+                    "availability(%)_TOTAL": 200.0, 
+                    "transaction-rate(trans/sec)_TOTAL": 2726.25, 
+                    "concurrent": 2000
+                }, 
+                {
+                    "processes": 4, 
+                    "availability(%)_TOTAL": 200.0, 
+                    "transaction-rate(trans/sec)_TOTAL": 2755.35, 
+                    "concurrent": 2000
+                }, 
+                {
+                    "processes": 8, 
+                    "availability(%)_TOTAL": 200.0, 
+                    "transaction-rate(trans/sec)_TOTAL": 2696.8900000000003, 
+                    "concurrent": 2000
+                }, 
+                {
+                    "processes": 16, 
+                    "availability(%)_TOTAL": 200.0, 
+                    "transaction-rate(trans/sec)_TOTAL": 2747.7799999999997, 
+                    "concurrent": 2000
+                }, 
+                {
+                    "processes": 32, 
+                    "availability(%)_TOTAL": 200.0, 
+                    "transaction-rate(trans/sec)_TOTAL": 2739.54, 
+                    "concurrent": 2000
+                }, 
+                {
+                    "processes": 1, 
+                    "availability(%)_TOTAL": 99.24, 
+                    "transaction-rate(trans/sec)_TOTAL": 2043.13, 
+                    "concurrent": 3200
+                }, 
+                {
+                    "processes": 4, 
+                    "availability(%)_TOTAL": 199.91, 
+                    "transaction-rate(trans/sec)_TOTAL": 4019.34, 
+                    "concurrent": 3200
+                }, 
+                {
+                    "processes": 8, 
+                    "availability(%)_TOTAL": 100.0, 
+                    "transaction-rate(trans/sec)_TOTAL": 2081.19, 
+                    "concurrent": 3200
+                }, 
+                {
+                    "processes": 16, 
+                    "availability(%)_TOTAL": 198.92000000000002, 
+                    "transaction-rate(trans/sec)_TOTAL": 3985.23, 
+                    "concurrent": 3200
+                }, 
+                {
+                    "processes": 32, 
+                    "availability(%)_TOTAL": 196.1, 
+                    "transaction-rate(trans/sec)_TOTAL": 3826.36, 
+                    "concurrent": 3200
+                }
+            ], 
+            "cmd_tmpl": "./webapps/test_martini.bin -port=%(port)d -size=%(processes)d 2>/dev/null 1>/dev/null", 
+            "port": 9002
+        }, 
+        {
+            "app": "test_tornado.py", 
+            "cmd_tmpl": "./webapps/test_tornado.py --port=%(port)d --processes=%(processes)d  2>/dev/null 1>/dev/null", 
+            "port": 8001, 
+            "results": [
+                {
+                    "processes": 1, 
+                    "availability(%)_TOTAL": 200.0, 
+                    "transaction-rate(trans/sec)_TOTAL": 1106.6100000000001, 
+                    "concurrent": 800
+                }, 
+                {
+                    "processes": 4, 
+                    "availability(%)_TOTAL": 200.0, 
+                    "transaction-rate(trans/sec)_TOTAL": 1100.5500000000002, 
+                    "concurrent": 800
+                }, 
+                {
+                    "processes": 8, 
+                    "availability(%)_TOTAL": 200.0, 
+                    "transaction-rate(trans/sec)_TOTAL": 1109.11, 
+                    "concurrent": 800
+                }, 
+                {
+                    "processes": 16, 
+                    "availability(%)_TOTAL": 200.0, 
+                    "transaction-rate(trans/sec)_TOTAL": 1109.67, 
+                    "concurrent": 800
+                }, 
+                {
+                    "processes": 32, 
+                    "availability(%)_TOTAL": 200.0, 
+                    "transaction-rate(trans/sec)_TOTAL": 1107.67, 
+                    "concurrent": 800
+                }, 
+                {
+                    "processes": 1, 
+                    "availability(%)_TOTAL": 200.0, 
+                    "transaction-rate(trans/sec)_TOTAL": 1618.74, 
+                    "concurrent": 1200
+                }, 
+                {
+                    "processes": 4, 
+                    "availability(%)_TOTAL": 200.0, 
+                    "transaction-rate(trans/sec)_TOTAL": 1648.55, 
+                    "concurrent": 1200
+                }, 
+                {
+                    "processes": 8, 
+                    "availability(%)_TOTAL": 200.0, 
+                    "transaction-rate(trans/sec)_TOTAL": 1666.3899999999999, 
+                    "concurrent": 1200
+                }, 
+                {
+                    "processes": 16, 
+                    "availability(%)_TOTAL": 200.0, 
+                    "transaction-rate(trans/sec)_TOTAL": 1655.9099999999999, 
+                    "concurrent": 1200
+                }, 
+                {
+                    "processes": 32, 
+                    "availability(%)_TOTAL": 200.0, 
+                    "transaction-rate(trans/sec)_TOTAL": 1663.6399999999999, 
+                    "concurrent": 1200
+                }, 
+                {
+                    "processes": 1, 
+                    "availability(%)_TOTAL": 200.0, 
+                    "transaction-rate(trans/sec)_TOTAL": 2010.01, 
+                    "concurrent": 1600
+                }, 
+                {
+                    "processes": 4, 
+                    "availability(%)_TOTAL": 200.0, 
+                    "transaction-rate(trans/sec)_TOTAL": 2229.92, 
+                    "concurrent": 1600
+                }, 
+                {
+                    "processes": 8, 
+                    "availability(%)_TOTAL": 200.0, 
+                    "transaction-rate(trans/sec)_TOTAL": 2205.16, 
+                    "concurrent": 1600
+                }, 
+                {
+                    "processes": 16, 
+                    "availability(%)_TOTAL": 200.0, 
+                    "transaction-rate(trans/sec)_TOTAL": 2184.3, 
+                    "concurrent": 1600
+                }, 
+                {
+                    "processes": 32, 
+                    "availability(%)_TOTAL": 200.0, 
+                    "transaction-rate(trans/sec)_TOTAL": 2189.44, 
+                    "concurrent": 1600
+                }, 
+                {
+                    "processes": 1, 
+                    "availability(%)_TOTAL": 200.0, 
+                    "transaction-rate(trans/sec)_TOTAL": 2105.92, 
+                    "concurrent": 2000
+                }, 
+                {
+                    "processes": 4, 
+                    "availability(%)_TOTAL": 200.0, 
+                    "transaction-rate(trans/sec)_TOTAL": 2747.51, 
+                    "concurrent": 2000
+                }, 
+                {
+                    "processes": 8, 
+                    "availability(%)_TOTAL": 200.0, 
+                    "transaction-rate(trans/sec)_TOTAL": 2747.1000000000004, 
+                    "concurrent": 2000
+                }, 
+                {
+                    "processes": 16, 
+                    "availability(%)_TOTAL": 200.0, 
+                    "transaction-rate(trans/sec)_TOTAL": 2725.4700000000003, 
+                    "concurrent": 2000
+                }, 
+                {
+                    "processes": 32, 
+                    "availability(%)_TOTAL": 199.98000000000002, 
+                    "transaction-rate(trans/sec)_TOTAL": 2747.96, 
+                    "concurrent": 2000
+                }, 
+                {
+                    "processes": 1, 
+                    "availability(%)_TOTAL": 99.68, 
+                    "transaction-rate(trans/sec)_TOTAL": 1918.01, 
+                    "concurrent": 3200
+                }, 
+                {
+                    "processes": 4, 
+                    "availability(%)_TOTAL": 200.0, 
+                    "transaction-rate(trans/sec)_TOTAL": 4151.88, 
+                    "concurrent": 3200
+                }, 
+                {
+                    "processes": 8, 
+                    "availability(%)_TOTAL": 99.93, 
+                    "transaction-rate(trans/sec)_TOTAL": 2087.7, 
+                    "concurrent": 3200
+                }, 
+                {
+                    "processes": 16, 
+                    "availability(%)_TOTAL": 196.44, 
+                    "transaction-rate(trans/sec)_TOTAL": 4113.37, 
+                    "concurrent": 3200
+                }, 
+                {
+                    "processes": 32, 
+                    "availability(%)_TOTAL": 199.57999999999998, 
+                    "transaction-rate(trans/sec)_TOTAL": 4164.200000000001, 
+                    "concurrent": 3200
+                }
+            ]
+        }, 
+        {
+            "app": "test_webpy_gevent.py", 
+            "cmd_tmpl": "cd webapps && gunicorn -k gevent -w %(processes)d -b 0.0.0.0:%(port)d test_webpy_gevent:wsgiapp 2>/dev/null 1>/dev/null", 
+            "port": 8002, 
+            "results": [
+                {
+                    "processes": 1, 
+                    "availability(%)_TOTAL": 200.0, 
+                    "transaction-rate(trans/sec)_TOTAL": 987.5699999999999, 
+                    "concurrent": 800
+                }, 
+                {
+                    "processes": 4, 
+                    "availability(%)_TOTAL": 200.0, 
+                    "transaction-rate(trans/sec)_TOTAL": 1109.62, 
+                    "concurrent": 800
+                }, 
+                {
+                    "processes": 8, 
+                    "availability(%)_TOTAL": 200.0, 
+                    "transaction-rate(trans/sec)_TOTAL": 1119.9, 
+                    "concurrent": 800
+                }, 
+                {
+                    "processes": 16, 
+                    "availability(%)_TOTAL": 200.0, 
+                    "transaction-rate(trans/sec)_TOTAL": 1115.5900000000001, 
+                    "concurrent": 800
+                }, 
+                {
+                    "processes": 32, 
+                    "availability(%)_TOTAL": 200.0, 
+                    "transaction-rate(trans/sec)_TOTAL": 1108.03, 
+                    "concurrent": 800
+                }, 
+                {
+                    "processes": 1, 
+                    "availability(%)_TOTAL": 200.0, 
+                    "transaction-rate(trans/sec)_TOTAL": 1284.41, 
+                    "concurrent": 1200
+                }, 
+                {
+                    "processes": 4, 
+                    "availability(%)_TOTAL": 200.0, 
+                    "transaction-rate(trans/sec)_TOTAL": 1656.0900000000001, 
+                    "concurrent": 1200
+                }, 
+                {
+                    "processes": 8, 
+                    "availability(%)_TOTAL": 200.0, 
+                    "transaction-rate(trans/sec)_TOTAL": 1655.6799999999998, 
+                    "concurrent": 1200
+                }, 
+                {
+                    "processes": 16, 
+                    "availability(%)_TOTAL": 200.0, 
+                    "transaction-rate(trans/sec)_TOTAL": 1641.65, 
+                    "concurrent": 1200
+                }, 
+                {
+                    "processes": 32, 
+                    "availability(%)_TOTAL": 200.0, 
+                    "transaction-rate(trans/sec)_TOTAL": 1644.81, 
+                    "concurrent": 1200
+                }, 
+                {
+                    "processes": 1, 
+                    "availability(%)_TOTAL": 200.0, 
+                    "transaction-rate(trans/sec)_TOTAL": 1349.99, 
+                    "concurrent": 1600
+                }, 
+                {
+                    "processes": 4, 
+                    "availability(%)_TOTAL": 200.0, 
+                    "transaction-rate(trans/sec)_TOTAL": 2198.45, 
+                    "concurrent": 1600
+                }, 
+                {
+                    "processes": 8, 
+                    "availability(%)_TOTAL": 200.0, 
+                    "transaction-rate(trans/sec)_TOTAL": 2221.01, 
+                    "concurrent": 1600
+                }, 
+                {
+                    "processes": 16, 
+                    "availability(%)_TOTAL": 200.0, 
+                    "transaction-rate(trans/sec)_TOTAL": 2212.33, 
+                    "concurrent": 1600
+                }, 
+                {
+                    "processes": 32, 
+                    "availability(%)_TOTAL": 200.0, 
+                    "transaction-rate(trans/sec)_TOTAL": 2208.6099999999997, 
+                    "concurrent": 1600
+                }, 
+                {
+                    "processes": 1, 
+                    "availability(%)_TOTAL": 200.0, 
+                    "transaction-rate(trans/sec)_TOTAL": 1465.14, 
+                    "concurrent": 2000
+                }, 
+                {
+                    "processes": 4, 
+                    "availability(%)_TOTAL": 200.0, 
+                    "transaction-rate(trans/sec)_TOTAL": 2738.99, 
+                    "concurrent": 2000
+                }, 
+                {
+                    "processes": 8, 
+                    "availability(%)_TOTAL": 200.0, 
+                    "transaction-rate(trans/sec)_TOTAL": 2731.19, 
+                    "concurrent": 2000
+                }, 
+                {
+                    "processes": 16, 
+                    "availability(%)_TOTAL": 200.0, 
+                    "transaction-rate(trans/sec)_TOTAL": 2726.52, 
+                    "concurrent": 2000
+                }, 
+                {
+                    "processes": 32, 
+                    "availability(%)_TOTAL": 199.99, 
+                    "transaction-rate(trans/sec)_TOTAL": 2739.56, 
+                    "concurrent": 2000
+                }, 
+                {
+                    "processes": 1, 
+                    "availability(%)_TOTAL": 94.1, 
+                    "transaction-rate(trans/sec)_TOTAL": 1186.79, 
+                    "concurrent": 3200
+                }, 
+                {
+                    "processes": 4, 
+                    "availability(%)_TOTAL": 198.15, 
+                    "transaction-rate(trans/sec)_TOTAL": 4069.45, 
+                    "concurrent": 3200
+                }, 
+                {
+                    "processes": 8, 
+                    "availability(%)_TOTAL": 100.0, 
+                    "transaction-rate(trans/sec)_TOTAL": 2092.32, 
+                    "concurrent": 3200
+                }, 
+                {
+                    "processes": 16, 
+                    "availability(%)_TOTAL": 198.75, 
+                    "transaction-rate(trans/sec)_TOTAL": 4079.58, 
+                    "concurrent": 3200
+                }, 
+                {
+                    "processes": 32, 
+                    "availability(%)_TOTAL": 99.96, 
+                    "transaction-rate(trans/sec)_TOTAL": 2061.77, 
+                    "concurrent": 3200
+                }
+            ]
+        }
+    ]
+}

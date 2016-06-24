@@ -1,0 +1,65 @@
+#!/usr/bin/env bash
+# created_by: xu_xiaorong
+# Do NOT "set -e"
+
+MW_HOME=$(dirname $(cd $(dirname $0); pwd;))
+
+#DAEMON_PROG `name` should seem with supervisor.conf configuration
+DAEMON_PROG=("task_manager" "task_executor" "task_adapter" "web_service")
+DAEMON_SN=("tm" "te" "ta" "ws")
+
+print_usage()
+{
+    echo "Usage: $SCRIPTNAME {start|stop|restart} [all|tm te ta ws]" >&2
+}
+
+do_start_stop()
+{
+    echo "$1 VddbAsync Server Daemons..."
+    idx=0
+    while true
+    do
+        [ -z "${DAEMON_SN[$idx]}" ] && break
+
+        if [ "${TARGET_MODULE}" != "all" ]; then
+            if [ "$TARGET_MODULE" != "${DAEMON_SN[$idx]}" ]; then
+                idx=`expr $idx + 1`
+                continue
+            fi
+        fi
+
+        if ! supervisorctl -h > /dev/null; then
+            #it's DAEMON_DESC first
+            echo "${DAEMON_PROG[$idx]} cannot start/stop without supervisor. Please include the name of the directory containing the supervisorctl in the PATH environment variable before running this script."
+            idx=`expr $idx + 1`
+            break
+        fi
+        #use supervisor start process
+        timeout 10 supervisorctl -c "$MW_HOME/etc/supervisord.conf" $1 "${DAEMON_PROG[idx]}:*"
+        idx=`expr $idx + 1`
+    done
+}
+
+#start#
+#[ `id -u` -ne 0 ] && echo "root privilege is required to run this script" && exit 1
+SCRIPTNAME=$0
+[ $# -lt 2 ] && print_usage && exit 1
+TARGET_MODULE=$2
+
+case "$1" in
+  start)
+    do_start_stop "start"
+    ;;
+  stop)
+    do_start_stop "stop"
+    ;;
+  restart)
+    echo "Restarting MediaWise Server Daemons..."
+    do_start_stop "stop"
+    do_start_stop  "start"
+    ;;
+  *)
+    print_usage
+    exit 1
+    ;;
+esac

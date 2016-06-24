@@ -1,0 +1,67 @@
+#!/usr/bin/env python
+#coding: utf-8
+
+import os
+import sys
+
+CONFIG_PATH = 'etc/supervisord.conf'
+VALID_PROGS = ['downloader']
+DEFAULT_PROG = 'downloader'
+
+
+def execute(cmd):
+    print 'Execute: [ %s ]' % cmd
+    print '-'*40
+    os.system(cmd)
+    print '==========< DONE >=========='
+
+
+def start(arg=None):
+    if arg is None:
+        cmd = 'supervisord -c %s' % CONFIG_PATH
+    else:
+        cmd = 'supervisorctl -c %s start %s' % (CONFIG_PATH, arg)
+    execute(cmd)
+
+
+def invoke(action, arg):
+    arg = '' if not arg else arg
+    cmd = 'supervisorctl -c %s %s %s' % (CONFIG_PATH, action, arg)
+    execute(cmd)
+    
+    
+def restart(arg=DEFAULT_PROG):
+    invoke('restart', arg)
+
+
+def stop(arg=DEFAULT_PROG):
+    invoke('stop', arg)
+
+
+def shutdown(arg=''):
+    invoke('shutdown', '')
+
+
+def main():
+    if len(sys.argv) < 2:
+        print >> sys.stderr, 'Argument not enough!', sys.argv
+        sys.exit(-1)
+        
+    cmd = sys.argv[1]
+    cmds = ('start', 'restart', 'stop', 'shutdown')
+    if cmd not in cmds:
+        print >> sys.stderr, 'Command error:', cmd
+        print >> sys.stderr, 'Valid command: %r' % (cmds,)
+        sys.exit(-1)
+
+    arg = None if len(sys.argv) < 3 else sys.argv[2]
+    if arg and arg not in VALID_PROGS:
+        print >> sys.stderr, 'Program error:', arg
+        print >> sys.stderr, 'Valid program: %r' % (VALID_PROGS, )
+        sys.exit(-1)
+    
+    globals()[cmd](arg)
+
+
+if __name__ == '__main__':
+    main()

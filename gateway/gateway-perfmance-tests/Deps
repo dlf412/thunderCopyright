@@ -1,0 +1,10 @@
+web.py
+tornado
+gevent
+uwsgi
+gunicorn
+
+psutil
+pyOpenSSL
+
+# siege libffi-dev python-dev

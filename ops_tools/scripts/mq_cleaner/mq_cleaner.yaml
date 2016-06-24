@@ -1,0 +1,29 @@
+
+# MQ 信息
+task-mq:
+  url         : amqp://guest:guest@127.0.0.1:5672//
+  routing-key : gateway_queue
+  exchange    : gateway_queue
+  queue       : gateway_queue
+  type        : fanout
+
+
+custom-type: thunder
+
+db:
+  # 每多少条记录 commit 一次
+  count-per-commit: 1000        
+  
+  # 数据库连接参数
+  args:
+    host   : localhost
+    port   : 3306
+    user   : root
+    passwd : hello123
+    db     : tmp_result_2
+    
+  # SQL 插入语句
+  sqls:
+    insert: "INSERT INTO cleaned_task(custom_type, client_id, file_private_id, url, digest, algorithm,
+                mime_type, file_name, file_size, swift_path)
+              VALUES(%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)"

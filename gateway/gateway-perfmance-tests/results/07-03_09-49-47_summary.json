@@ -1,0 +1,62 @@
+{
+    "test_webpy_gevent.py-UWSGI": {
+        "cmd_tmpl": "uwsgi --gevent 100 --gevent-monkey-patch -M --processes %(processes)d --http 0.0.0.0:%(port)d --wsgi-file test_webpy_gevent.py --callable wsgiapp 2>/dev/null 1>/dev/null", 
+        "port": 8003, 
+        "results": [
+            {
+                "concurrent": 200, 
+                "processes": 1, 
+                "availability": 100.0, 
+                "rate": 260.39
+            }
+        ]
+    }, 
+    "test_webpy_gevent.py": {
+        "cmd_tmpl": "gunicorn -k gevent -w %(processes)d -b 0.0.0.0:%(port)d test_webpy_gevent:wsgiapp 2>/dev/null 1>/dev/null", 
+        "port": 8002, 
+        "results": [
+            {
+                "concurrent": 200, 
+                "processes": 1, 
+                "availability": 100.0, 
+                "rate": 265.96
+            }
+        ]
+    }, 
+    "test_http.go": {
+        "cmd_tmpl": "./test_http.bin -port=%(port)d -size=%(processes)d 2>/dev/null 1>/dev/null", 
+        "port": 9001, 
+        "results": [
+            {
+                "concurrent": 200, 
+                "processes": 1, 
+                "availability": 100.0, 
+                "rate": 402.25
+            }
+        ]
+    }, 
+    "test_martini.go": {
+        "cmd_tmpl": "./test_martini.bin -port=%(port)d -size=%(processes)d 2>/dev/null 1>/dev/null", 
+        "port": 9002, 
+        "results": [
+            {
+                "concurrent": 200, 
+                "processes": 1, 
+                "availability": 100.0, 
+                "rate": 278.96
+            }
+        ]
+    }, 
+    "test_tornado.py": {
+        "cmd_tmpl": "python test_tornado.py --port=%(port)d --processes=%(processes)d  2>/dev/null 1>/dev/null", 
+        "port": 8001, 
+        "results": [
+            {
+                "concurrent": 200, 
+                "processes": 1, 
+                "availability": 100.0, 
+                "rate": 261.32
+            }
+        ]
+    }
+}

@@ -1,0 +1,840 @@
+{
+    "test_webpy_gevent.py": {
+        "cmd_tmpl": "gunicorn --certfile=cert.pem --keyfile=key.pem -k gevent -w %(processes)d -b 0.0.0.0:%(port)d test_webpy_gevent:wsgiapp 2>/dev/null 1>/dev/null", 
+        "port": 8002, 
+        "results": [
+            {
+                "concurrent": 200, 
+                "processes": 1, 
+                "availability": 100.0, 
+                "rate": 259.07
+            }, 
+            {
+                "concurrent": 400, 
+                "processes": 1, 
+                "availability": 100.0, 
+                "rate": 315.46
+            }, 
+            {
+                "concurrent": 600, 
+                "processes": 1, 
+                "availability": 100.0, 
+                "rate": 288.57
+            }, 
+            {
+                "concurrent": 800, 
+                "processes": 1, 
+                "availability": 100.0, 
+                "rate": 261.55
+            }, 
+            {
+                "concurrent": 1000, 
+                "processes": 1, 
+                "availability": 100.0, 
+                "rate": 250.91
+            }, 
+            {
+                "concurrent": 200, 
+                "processes": 2, 
+                "availability": 100.0, 
+                "rate": 259.0
+            }, 
+            {
+                "concurrent": 400, 
+                "processes": 2, 
+                "availability": 100.0, 
+                "rate": 296.89
+            }, 
+            {
+                "concurrent": 600, 
+                "processes": 2, 
+                "availability": 100.0, 
+                "rate": 294.87
+            }, 
+            {
+                "concurrent": 800, 
+                "processes": 2, 
+                "availability": 99.67, 
+                "rate": 275.23
+            }, 
+            {
+                "concurrent": 1000, 
+                "processes": 2, 
+                "availability": 100.0, 
+                "rate": 277.89
+            }, 
+            {
+                "concurrent": 200, 
+                "processes": 4, 
+                "availability": 100.0, 
+                "rate": 246.73
+            }, 
+            {
+                "concurrent": 400, 
+                "processes": 4, 
+                "availability": 100.0, 
+                "rate": 302.61
+            }, 
+            {
+                "concurrent": 600, 
+                "processes": 4, 
+                "availability": 100.0, 
+                "rate": 294.68
+            }, 
+            {
+                "concurrent": 800, 
+                "processes": 4, 
+                "availability": 100.0, 
+                "rate": 257.79
+            }, 
+            {
+                "concurrent": 1000, 
+                "processes": 4, 
+                "availability": 100.0, 
+                "rate": 279.38
+            }, 
+            {
+                "concurrent": 200, 
+                "processes": 8, 
+                "availability": 100.0, 
+                "rate": 256.3
+            }, 
+            {
+                "concurrent": 400, 
+                "processes": 8, 
+                "availability": 100.0, 
+                "rate": 297.99
+            }, 
+            {
+                "concurrent": 600, 
+                "processes": 8, 
+                "availability": 100.0, 
+                "rate": 276.23
+            }, 
+            {
+                "concurrent": 800, 
+                "processes": 8, 
+                "availability": 100.0, 
+                "rate": 286.65
+            }, 
+            {
+                "concurrent": 1000, 
+                "processes": 8, 
+                "availability": 100.0, 
+                "rate": 256.9
+            }, 
+            {
+                "concurrent": 200, 
+                "processes": 16, 
+                "availability": 100.0, 
+                "rate": 252.8
+            }, 
+            {
+                "concurrent": 400, 
+                "processes": 16, 
+                "availability": 100.0, 
+                "rate": 316.65
+            }, 
+            {
+                "concurrent": 600, 
+                "processes": 16, 
+                "availability": 100.0, 
+                "rate": 274.62
+            }, 
+            {
+                "concurrent": 800, 
+                "processes": 16, 
+                "availability": 100.0, 
+                "rate": 262.01
+            }, 
+            {
+                "concurrent": 1000, 
+                "processes": 16, 
+                "availability": 96.89, 
+                "rate": 275.0
+            }, 
+            {
+                "concurrent": 200, 
+                "processes": 32, 
+                "availability": 100.0, 
+                "rate": 254.11
+            }, 
+            {
+                "concurrent": 400, 
+                "processes": 32, 
+                "availability": 100.0, 
+                "rate": 302.91
+            }, 
+            {
+                "concurrent": 600, 
+                "processes": 32, 
+                "availability": 100.0, 
+                "rate": 281.66
+            }, 
+            {
+                "concurrent": 800, 
+                "processes": 32, 
+                "availability": 100.0, 
+                "rate": 264.39
+            }, 
+            {
+                "concurrent": 1000, 
+                "processes": 32, 
+                "availability": 100.0, 
+                "rate": 255.08
+            }, 
+            {
+                "concurrent": 200, 
+                "processes": 64, 
+                "availability": 100.0, 
+                "rate": 254.31
+            }, 
+            {
+                "concurrent": 400, 
+                "processes": 64, 
+                "availability": 100.0, 
+                "rate": 289.88
+            }, 
+            {
+                "concurrent": 600, 
+                "processes": 64, 
+                "availability": 100.0, 
+                "rate": 295.17
+            }, 
+            {
+                "concurrent": 800, 
+                "processes": 64, 
+                "availability": 99.96, 
+                "rate": 267.6
+            }, 
+            {
+                "concurrent": 1000, 
+                "processes": 64, 
+                "availability": 99.24, 
+                "rate": 288.65
+            }
+        ]
+    }, 
+    "test_http.go": {
+        "cmd_tmpl": "./test_http.bin -port=%(port)d -size=%(processes)d 2>/dev/null 1>/dev/null", 
+        "port": 9001, 
+        "results": [
+            {
+                "concurrent": 200, 
+                "processes": 1, 
+                "availability": 100.0, 
+                "rate": 97.63
+            }, 
+            {
+                "concurrent": 400, 
+                "processes": 1, 
+                "availability": 100.0, 
+                "rate": 83.05
+            }, 
+            {
+                "concurrent": 600, 
+                "processes": 1, 
+                "availability": 100.0, 
+                "rate": 64.63
+            }, 
+            {
+                "concurrent": 800, 
+                "processes": 1, 
+                "availability": 100.0, 
+                "rate": 70.24
+            }, 
+            {
+                "concurrent": 1000, 
+                "processes": 1, 
+                "availability": 100.0, 
+                "rate": 33.33
+            }, 
+            {
+                "concurrent": 200, 
+                "processes": 2, 
+                "availability": 100.0, 
+                "rate": 87.09
+            }, 
+            {
+                "concurrent": 400, 
+                "processes": 2, 
+                "availability": 100.0, 
+                "rate": 64.29
+            }, 
+            {
+                "concurrent": 600, 
+                "processes": 2, 
+                "availability": 100.0, 
+                "rate": 63.86
+            }, 
+            {
+                "concurrent": 800, 
+                "processes": 2, 
+                "availability": 100.0, 
+                "rate": 59.54
+            }, 
+            {
+                "concurrent": 1000, 
+                "processes": 2, 
+                "availability": 90.82, 
+                "rate": 58.69
+            }, 
+            {
+                "concurrent": 200, 
+                "processes": 4, 
+                "availability": 100.0, 
+                "rate": 95.28
+            }, 
+            {
+                "concurrent": 400, 
+                "processes": 4, 
+                "availability": 100.0, 
+                "rate": 70.58
+            }, 
+            {
+                "concurrent": 600, 
+                "processes": 4, 
+                "availability": 100.0, 
+                "rate": 56.37
+            }, 
+            {
+                "concurrent": 800, 
+                "processes": 4, 
+                "availability": 99.85, 
+                "rate": 65.03
+            }, 
+            {
+                "concurrent": 1000, 
+                "processes": 4, 
+                "availability": 100.0, 
+                "rate": 56.47
+            }, 
+            {
+                "concurrent": 200, 
+                "processes": 8, 
+                "availability": 100.0, 
+                "rate": 91.98
+            }, 
+            {
+                "concurrent": 400, 
+                "processes": 8, 
+                "availability": 100.0, 
+                "rate": 82.75
+            }, 
+            {
+                "concurrent": 600, 
+                "processes": 8, 
+                "availability": 100.0, 
+                "rate": 60.44
+            }, 
+            {
+                "concurrent": 800, 
+                "processes": 8, 
+                "availability": 100.0, 
+                "rate": 43.43
+            }, 
+            {
+                "concurrent": 1000, 
+                "processes": 8, 
+                "availability": 100.0, 
+                "rate": 52.11
+            }, 
+            {
+                "concurrent": 200, 
+                "processes": 16, 
+                "availability": 100.0, 
+                "rate": 88.38
+            }, 
+            {
+                "concurrent": 400, 
+                "processes": 16, 
+                "availability": 100.0, 
+                "rate": 67.3
+            }, 
+            {
+                "concurrent": 600, 
+                "processes": 16, 
+                "availability": 100.0, 
+                "rate": 63.25
+            }, 
+            {
+                "concurrent": 800, 
+                "processes": 16, 
+                "availability": 100.0, 
+                "rate": 58.58
+            }, 
+            {
+                "concurrent": 1000, 
+                "processes": 16, 
+                "availability": 98.92, 
+                "rate": 55.18
+            }, 
+            {
+                "concurrent": 200, 
+                "processes": 32, 
+                "availability": 100.0, 
+                "rate": 95.92
+            }, 
+            {
+                "concurrent": 400, 
+                "processes": 32, 
+                "availability": 100.0, 
+                "rate": 82.93
+            }, 
+            {
+                "concurrent": 600, 
+                "processes": 32, 
+                "availability": 100.0, 
+                "rate": 50.35
+            }, 
+            {
+                "concurrent": 800, 
+                "processes": 32, 
+                "availability": 100.0, 
+                "rate": 61.82
+            }, 
+            {
+                "concurrent": 1000, 
+                "processes": 32, 
+                "availability": 100.0, 
+                "rate": 37.22
+            }, 
+            {
+                "concurrent": 200, 
+                "processes": 64, 
+                "availability": 100.0, 
+                "rate": 83.71
+            }, 
+            {
+                "concurrent": 400, 
+                "processes": 64, 
+                "availability": 100.0, 
+                "rate": 61.08
+            }, 
+            {
+                "concurrent": 600, 
+                "processes": 64, 
+                "availability": 100.0, 
+                "rate": 67.37
+            }, 
+            {
+                "concurrent": 800, 
+                "processes": 64, 
+                "availability": 100.0, 
+                "rate": 53.97
+            }, 
+            {
+                "concurrent": 1000, 
+                "processes": 64, 
+                "availability": 94.6, 
+                "rate": 44.02
+            }
+        ]
+    }, 
+    "test_martini.go": {
+        "cmd_tmpl": "./test_martini.bin -port=%(port)d -size=%(processes)d 2>/dev/null 1>/dev/null", 
+        "port": 9002, 
+        "results": [
+            {
+                "concurrent": 200, 
+                "processes": 1, 
+                "availability": 100.0, 
+                "rate": 83.42
+            }, 
+            {
+                "concurrent": 400, 
+                "processes": 1, 
+                "availability": 100.0, 
+                "rate": 85.97
+            }, 
+            {
+                "concurrent": 600, 
+                "processes": 1, 
+                "availability": 100.0, 
+                "rate": 41.52
+            }, 
+            {
+                "concurrent": 800, 
+                "processes": 1, 
+                "availability": 100.0, 
+                "rate": 55.38
+            }, 
+            {
+                "concurrent": 1000, 
+                "processes": 1, 
+                "availability": 97.52, 
+                "rate": 43.43
+            }, 
+            {
+                "concurrent": 200, 
+                "processes": 2, 
+                "availability": 100.0, 
+                "rate": 74.92
+            }, 
+            {
+                "concurrent": 400, 
+                "processes": 2, 
+                "availability": 100.0, 
+                "rate": 77.25
+            }, 
+            {
+                "concurrent": 600, 
+                "processes": 2, 
+                "availability": 100.0, 
+                "rate": 55.06
+            }, 
+            {
+                "concurrent": 800, 
+                "processes": 2, 
+                "availability": 100.0, 
+                "rate": 25.5
+            }, 
+            {
+                "concurrent": 1000, 
+                "processes": 2, 
+                "availability": 95.71, 
+                "rate": 47.09
+            }, 
+            {
+                "concurrent": 200, 
+                "processes": 4, 
+                "availability": 100.0, 
+                "rate": 80.42
+            }, 
+            {
+                "concurrent": 400, 
+                "processes": 4, 
+                "availability": 100.0, 
+                "rate": 49.85
+            }, 
+            {
+                "concurrent": 600, 
+                "processes": 4, 
+                "availability": 100.0, 
+                "rate": 54.52
+            }, 
+            {
+                "concurrent": 800, 
+                "processes": 4, 
+                "availability": 100.0, 
+                "rate": 44.78
+            }, 
+            {
+                "concurrent": 1000, 
+                "processes": 4, 
+                "availability": 100.0, 
+                "rate": 50.6
+            }, 
+            {
+                "concurrent": 200, 
+                "processes": 8, 
+                "availability": 100.0, 
+                "rate": 73.17
+            }, 
+            {
+                "concurrent": 400, 
+                "processes": 8, 
+                "availability": 100.0, 
+                "rate": 73.19
+            }, 
+            {
+                "concurrent": 600, 
+                "processes": 8, 
+                "availability": 100.0, 
+                "rate": 51.0
+            }, 
+            {
+                "concurrent": 800, 
+                "processes": 8, 
+                "availability": 100.0, 
+                "rate": 32.46
+            }, 
+            {
+                "concurrent": 1000, 
+                "processes": 8, 
+                "availability": 100.0, 
+                "rate": 57.99
+            }, 
+            {
+                "concurrent": 200, 
+                "processes": 16, 
+                "availability": 100.0, 
+                "rate": 78.96
+            }, 
+            {
+                "concurrent": 400, 
+                "processes": 16, 
+                "availability": 100.0, 
+                "rate": 79.36
+            }, 
+            {
+                "concurrent": 600, 
+                "processes": 16, 
+                "availability": 100.0, 
+                "rate": 52.56
+            }, 
+            {
+                "concurrent": 800, 
+                "processes": 16, 
+                "availability": 100.0, 
+                "rate": 51.55
+            }, 
+            {
+                "concurrent": 1000, 
+                "processes": 16, 
+                "availability": 98.81, 
+                "rate": 41.62
+            }, 
+            {
+                "concurrent": -1, 
+                "processes": 32
+            }, 
+            {
+                "concurrent": 200, 
+                "processes": 64, 
+                "availability": 100.0, 
+                "rate": 86.88
+            }, 
+            {
+                "concurrent": 400, 
+                "processes": 64, 
+                "availability": 100.0, 
+                "rate": 70.51
+            }, 
+            {
+                "concurrent": 600, 
+                "processes": 64, 
+                "availability": 100.0, 
+                "rate": 53.01
+            }, 
+            {
+                "concurrent": 800, 
+                "processes": 64, 
+                "availability": 100.0, 
+                "rate": 42.43
+            }, 
+            {
+                "concurrent": 1000, 
+                "processes": 64, 
+                "availability": 100.0, 
+                "rate": 40.62
+            }
+        ]
+    }, 
+    "test_tornado.py": {
+        "cmd_tmpl": "python test_tornado.py --port=%(port)d --processes=%(processes)d  2>/dev/null 1>/dev/null", 
+        "port": 8001, 
+        "results": [
+            {
+                "concurrent": 200, 
+                "processes": 1, 
+                "availability": 100.0, 
+                "rate": 253.31
+            }, 
+            {
+                "concurrent": 400, 
+                "processes": 1, 
+                "availability": 100.0, 
+                "rate": 328.82
+            }, 
+            {
+                "concurrent": 600, 
+                "processes": 1, 
+                "availability": 100.0, 
+                "rate": 316.27
+            }, 
+            {
+                "concurrent": 800, 
+                "processes": 1, 
+                "availability": 100.0, 
+                "rate": 314.36
+            }, 
+            {
+                "concurrent": 1000, 
+                "processes": 1, 
+                "availability": 100.0, 
+                "rate": 305.13
+            }, 
+            {
+                "concurrent": 200, 
+                "processes": 2, 
+                "availability": 100.0, 
+                "rate": 244.78
+            }, 
+            {
+                "concurrent": 400, 
+                "processes": 2, 
+                "availability": 100.0, 
+                "rate": 330.29
+            }, 
+            {
+                "concurrent": 600, 
+                "processes": 2, 
+                "availability": 100.0, 
+                "rate": 335.94
+            }, 
+            {
+                "concurrent": 800, 
+                "processes": 2, 
+                "availability": 100.0, 
+                "rate": 305.22
+            }, 
+            {
+                "concurrent": 1000, 
+                "processes": 2, 
+                "availability": 100.0, 
+                "rate": 315.08
+            }, 
+            {
+                "concurrent": 200, 
+                "processes": 4, 
+                "availability": 100.0, 
+                "rate": 255.32
+            }, 
+            {
+                "concurrent": 400, 
+                "processes": 4, 
+                "availability": 100.0, 
+                "rate": 338.31
+            }, 
+            {
+                "concurrent": 600, 
+                "processes": 4, 
+                "availability": 100.0, 
+                "rate": 310.55
+            }, 
+            {
+                "concurrent": 800, 
+                "processes": 4, 
+                "availability": 100.0, 
+                "rate": 315.05
+            }, 
+            {
+                "concurrent": 1000, 
+                "processes": 4, 
+                "availability": 99.94, 
+                "rate": 326.33
+            }, 
+            {
+                "concurrent": 200, 
+                "processes": 8, 
+                "availability": 100.0, 
+                "rate": 253.73
+            }, 
+            {
+                "concurrent": 400, 
+                "processes": 8, 
+                "availability": 100.0, 
+                "rate": 343.24
+            }, 
+            {
+                "concurrent": 600, 
+                "processes": 8, 
+                "availability": 100.0, 
+                "rate": 324.22
+            }, 
+            {
+                "concurrent": 800, 
+                "processes": 8, 
+                "availability": 100.0, 
+                "rate": 318.29
+            }, 
+            {
+                "concurrent": 1000, 
+                "processes": 8, 
+                "availability": 99.83, 
+                "rate": 300.6
+            }, 
+            {
+                "concurrent": 200, 
+                "processes": 16, 
+                "availability": 100.0, 
+                "rate": 254.18
+            }, 
+            {
+                "concurrent": 400, 
+                "processes": 16, 
+                "availability": 100.0, 
+                "rate": 335.64
+            }, 
+            {
+                "concurrent": 600, 
+                "processes": 16, 
+                "availability": 100.0, 
+                "rate": 328.31
+            }, 
+            {
+                "concurrent": 800, 
+                "processes": 16, 
+                "availability": 100.0, 
+                "rate": 325.1
+            }, 
+            {
+                "concurrent": 1000, 
+                "processes": 16, 
+                "availability": 99.96, 
+                "rate": 283.03
+            }, 
+            {
+                "concurrent": 200, 
+                "processes": 32, 
+                "availability": 100.0, 
+                "rate": 247.27
+            }, 
+            {
+                "concurrent": 400, 
+                "processes": 32, 
+                "availability": 100.0, 
+                "rate": 335.34
+            }, 
+            {
+                "concurrent": 600, 
+                "processes": 32, 
+                "availability": 100.0, 
+                "rate": 339.12
+            }, 
+            {
+                "concurrent": 800, 
+                "processes": 32, 
+                "availability": 100.0, 
+                "rate": 305.22
+            }, 
+            {
+                "concurrent": 1000, 
+                "processes": 32, 
+                "availability": 100.0, 
+                "rate": 317.99
+            }, 
+            {
+                "concurrent": 200, 
+                "processes": 64, 
+                "availability": 100.0, 
+                "rate": 253.12
+            }, 
+            {
+                "concurrent": 400, 
+                "processes": 64, 
+                "availability": 100.0, 
+                "rate": 337.63
+            }, 
+            {
+                "concurrent": 600, 
+                "processes": 64, 
+                "availability": 100.0, 
+                "rate": 309.94
+            }, 
+            {
+                "concurrent": 800, 
+                "processes": 64, 
+                "availability": 100.0, 
+                "rate": 311.35
+            }, 
+            {
+                "concurrent": 1000, 
+                "processes": 64, 
+                "availability": 100.0, 
+                "rate": 300.1
+            }
+        ]
+    }
+}

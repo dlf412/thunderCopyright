@@ -1,0 +1,145 @@
+#! /bin/bash
+if [ $1 = "-v" ];then
+    echo "v5.7.0.0"
+    exit 0
+fi
+res="${12}"
+crr="${14}"
+site="${18}"
+
+res_res='<vddb>
+    <query>
+        <return_code>0</return_code>
+        <extra_info>Success</extra_info>
+    </query>
+    <matches size="3" status="0">
+        <match>
+            <master_uuid>3f5b54da-15c5-11e1-9808-080027cf46d6</master_uuid>
+            <master_name>Auto_Rule307_Movie</master_name>
+            <instance_id>3f817b10-15c5-11e1-9808-080027cf46d6</instance_id>
+            <instance_name>cappella</instance_name>
+            <track_type>video</track_type>
+            <track_id>0</track_id>
+            <match_duration>307</match_duration>
+            <score>99</score>
+            <reference_offset>0</reference_offset>
+            <sample_offset>0</sample_offset>
+        </match>
+        <match>
+            <master_uuid>6ed1e476-df00-11e2-97f6-fa163e45e250</master_uuid>
+            <master_name>cappella.flv.xfp.merge</master_name>
+            <instance_id>6ed6d044-df00-11e2-97f6-fa163e45e250</instance_id>
+            <instance_name>cappella.flv.xfp.merge</instance_name>
+            <track_type>video</track_type>
+            <track_id>0</track_id>
+            <match_duration>307</match_duration>
+            <score>99</score>
+            <reference_offset>0</reference_offset>
+            <sample_offset>0</sample_offset>
+        </match>
+        <match>
+            <master_uuid>970ae0ba-773b-11e1-a7b2-080027cf46d6</master_uuid>
+            <master_name>Auto_Rule306_Movie</master_name>
+            <instance_id>9752d1cc-773b-11e1-a7b2-080027cf46d6</instance_id>
+            <instance_name>cappella.flv.xfp.0</instance_name>
+            <track_type>video</track_type>
+            <track_id>0</track_id>
+            <match_duration>307</match_duration>
+            <score>99</score>
+            <reference_offset>0</reference_offset>
+            <sample_offset>0</sample_offset>
+        </match>
+    </matches>
+</vddb>'
+crr_res='''
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<Notifications>
+<Notification version="1" revision="1">
+    <RuleListName version="1" revision="1">Default</RuleListName>
+    <RuleListCreationTime>2008-10-20T11:15:43</RuleListCreationTime>
+    <RuleListID>767ea63a-6146-4dd5-953a-a4f28383c9e9</RuleListID>
+    <Owner>
+        <Name></Name>
+        <OwnerDomain></OwnerDomain>
+        <Email></Email>
+        <Phone></Phone>
+    </Owner>
+    <Asset>
+        <OriginalAssetName>Auto_Rule307_Movie</OriginalAssetName>
+        <OriginalAssetID type="UUID">3f5b54da-15c5-11e1-9808-080027cf46d6</OriginalAssetID>
+    </Asset>
+    <RuleName priority="100">default1</RuleName>
+    <RuleListValidDuration start="2008-10-20T00:00:00" end="" duration=""/>
+    <RuleValidDuration start="2008-10-20T00:00:00" end="" duration=""/>
+    <SiteConcerned>www.test9.com</SiteConcerned>
+    <SiteAsset>
+        <SiteAssetID>a</SiteAssetID>
+        <SiteDomain>www.test9.com</SiteDomain>
+        <TimeMatchRequested>2014-05-28T09:26:54</TimeMatchRequested>
+        <TimeMatchDetected>2014-05-28T09:26:55</TimeMatchDetected>
+        <Format type="MIME">dna</Format>
+        <Length>PT5M6S</Length>
+        <LengthDetected>PT5M7S</LengthDetected>
+    </SiteAsset>
+    <MatchedComponents>video</MatchedComponents>
+    <OriginatorID Country="">www.test9.com</OriginatorID>
+    <Actions>
+        <Log></Log>
+        <ReportToOwner></ReportToOwner>
+    </Actions>
+</Notification>
+<Notification version="1" revision="1">
+    <RuleListName version="1" revision="1">Default</RuleListName>
+    <RuleListCreationTime>2008-10-20T11:15:43</RuleListCreationTime>
+    <RuleListID>767ea63a-6146-4dd5-953a-a4f28383c9e9</RuleListID>
+    <Owner>
+        <Name></Name>
+        <OwnerDomain></OwnerDomain>
+        <Email></Email>
+        <Phone></Phone>
+    </Owner>
+    <Asset>
+        <OriginalAssetName>cappella.flv.xfp.merge</OriginalAssetName>
+        <OriginalAssetID type="UUID">6ed1e476-df00-11e2-97f6-fa163e45e250</OriginalAssetID>
+    </Asset>
+    <RuleName priority="100">default1</RuleName>
+    <RuleListValidDuration start="2008-10-20T00:00:00" end="" duration=""/>
+    <RuleValidDuration start="2008-10-20T00:00:00" end="" duration=""/>
+    <SiteConcerned>www.test9.com</SiteConcerned>
+    <SiteAsset>
+        <SiteAssetID>a</SiteAssetID>
+        <SiteDomain>www.test9.com</SiteDomain>
+        <TimeMatchRequested>2014-05-28T09:26:54</TimeMatchRequested>
+        <TimeMatchDetected>2014-05-28T09:26:55</TimeMatchDetected>
+        <Format type="MIME">dna</Format>
+        <Length>PT5M6S</Length>
+        <LengthDetected>PT5M7S</LengthDetected>
+    </SiteAsset>
+    <MatchedComponents>video</MatchedComponents>
+    <OriginatorID Country="">www.test9.com</OriginatorID>
+    <Actions>
+        <Log></Log>
+        <ReportToOwner></ReportToOwner>
+    </Actions>
+</Notification>
+</Notifications>
+'''
+site_res="
+<SampleInfo>
+<SiteAssetID>a</SiteAssetID>
+<OriginatorID>www.test8.com</OriginatorID>
+<SiteDomain>www.test8.com</SiteDomain>
+</SampleInfo>
+"
+for i in res crr site;
+do
+    dir=`dirname ${!i}`
+    echo $dir
+    mkdir -p $dir
+    touch ${!i}
+    t=${i}_res
+    echo ${!t} > ${!i}
+done
+
+exit 0

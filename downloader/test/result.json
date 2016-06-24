@@ -1,0 +1,29 @@
+{
+    "jsonrpc": "2.0",
+    "id": 1,
+    "method": "finish_task",
+    "params": {
+        "error_code": 0,
+        "client_id": "",
+        "message": "",
+        "host_name": "",
+        "percentage": 0,
+        "url": {
+            "location": "",
+            "hash": ""
+        },
+        "seed_file": {
+            "path": "",
+            "hash": ""
+        },
+        "dna": {
+            "path": "",
+            "hash": "",
+            "cal_size": 0,
+            "etc_version": "1.0"
+        },
+        "mime_type": "",
+        "protocol": "",
+        "thunder_hash": ""
+    }
+}

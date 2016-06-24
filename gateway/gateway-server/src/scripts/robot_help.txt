@@ -1,0 +1,10 @@
+python 调试 mq 需要
+
+ easy_install kombu
+
+sudo apt-get install python-dev
+sudo  pip install kombu
+sudo  pip install librabbitmq
+
+interface调试使用库
+sudo pip install requests

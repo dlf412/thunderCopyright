@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<Notifications>
+   <Notification version="1" revision="1">
+      <RuleListName version="1" revision="1">maomao</RuleListName>
+      <RuleListCreationTime>2008-10-20T11:15:43</RuleListCreationTime>
+      <RuleListID>767ea63a-6146-4dd5-953a-a4f28383c9e9</RuleListID>
+      <Owner>
+         <Name>zxh</Name>
+         <OwnerDomain/>
+         <Email/>
+         <Phone/>
+      </Owner>
+      <Asset>
+         <OriginalAssetName>The.Devil.Wears.Prada_0_300_29_270</OriginalAssetName>
+         <OriginalAssetID type="UUID">08e35d26-abca-11e1-b804-080027b5f79b</OriginalAssetID>
+      </Asset>
+      <RuleName priority="100">default1</RuleName>
+      <RuleListValidDuration start="2008-10-20T00:00:00" end="" duration=""/>
+      <RuleValidDuration start="2008-10-20T00:00:00" end="" duration=""/>
+      <SiteConcerned>zhousc_test</SiteConcerned>
+      <SiteAsset>
+         <SiteAssetID>the</SiteAssetID>
+         <SiteDomain>zhousc_test</SiteDomain>
+         <TimeMatchRequested>2012-06-01T09:29:03</TimeMatchRequested>
+         <TimeMatchDetected>2012-06-01T09:29:21</TimeMatchDetected>
+         <Format type="MIME">dna</Format>
+         <Length>PT3M59S</Length>
+         <LengthDetected>PT3M58S</LengthDetected>
+      </SiteAsset>
+      <MatchedComponents>both</MatchedComponents>
+      <OriginatorID Country="">zhousc_test</OriginatorID>
+      <Actions>
+         <Log/>
+         <ReportToOwner/>
+      </Actions>
+   </Notification>
+   
+   <Notification version="1" revision="1">
+      <RuleListName version="1" revision="1">maomao</RuleListName>
+      <RuleListCreationTime>2008-10-20T11:15:43</RuleListCreationTime>
+      <RuleListID>767ea63a-6146-4dd5-953a-a4f28383c9e9</RuleListID>
+      <Owner>
+         <Name>zxh</Name>
+         <OwnerDomain/>
+         <Email/>
+         <Phone/>
+      </Owner>
+      
+      <RuleName priority="100">default1</RuleName>
+      <RuleListValidDuration start="2008-10-20T00:00:00" end="" duration=""/>
+      <RuleValidDuration start="2008-10-20T00:00:00" end="" duration=""/>
+      <SiteConcerned>zhousc_test</SiteConcerned>
+      <SiteAsset>
+         <SiteAssetID>the</SiteAssetID>
+         <SiteDomain>zhousc_test</SiteDomain>
+         <TimeMatchRequested>2012-06-01T09:29:03</TimeMatchRequested>
+         <TimeMatchDetected>2012-06-01T09:29:21</TimeMatchDetected>
+         <Format type="MIME">dna</Format>
+         <Length>PT3M59S</Length>
+         <LengthDetected>PT3M58S</LengthDetected>
+      </SiteAsset>
+      <MatchedComponents>both</MatchedComponents>
+      <OriginatorID Country="">zhousc_test</OriginatorID>
+      <Actions>
+         <Log/>
+         <ReportToOwner/>
+      </Actions>
+   </Notification>
+   
+   <Notification version="1" revision="1">
+      <RuleListName version="1" revision="1">maomao</RuleListName>
+      <RuleListCreationTime>2008-10-20T11:15:43</RuleListCreationTime>
+      <RuleListID>767ea63a-6146-4dd5-953a-a4f28383c9e9</RuleListID>
+      <Owner>
+         <Name>zxh</Name>
+         <OwnerDomain/>
+         <Email/>
+         <Phone/>
+      </Owner>
+      <Asset>
+         <OriginalAssetName>The.Devil.Wears.Prada_0_300_29_270</OriginalAssetName>
+         <OriginalAssetID type="UUID">08e35d26-abca-11e1-b804-080027b5f79d</OriginalAssetID>
+      </Asset>
+      <RuleName priority="100">default1</RuleName>
+      <RuleListValidDuration start="2008-10-20T00:00:00" end="" duration=""/>
+      <RuleValidDuration start="2008-10-20T00:00:00" end="" duration=""/>
+      <SiteConcerned>zhousc_test</SiteConcerned>
+      <SiteAsset>
+         <SiteAssetID>the</SiteAssetID>
+         <SiteDomain>zhousc_test</SiteDomain>
+         <TimeMatchRequested>2012-06-01T09:29:03</TimeMatchRequested>
+         <TimeMatchDetected>2012-06-01T09:29:21</TimeMatchDetected>
+         <Format type="MIME">dna</Format>
+         <Length>PT3M59S</Length>
+         <LengthDetected>PT3M58S</LengthDetected>
+      </SiteAsset>
+      <MatchedComponents>both</MatchedComponents>
+      <OriginatorID Country="">zhousc_test</OriginatorID>
+      <Actions>
+         <Log/>
+         <ReportToOwner/>
+      </Actions>
+   </Notification>
+   
+</Notifications>

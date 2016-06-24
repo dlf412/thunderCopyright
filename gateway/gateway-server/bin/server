@@ -1,0 +1,10 @@
+#!/usr/bin/env python
+#coding: utf-8
+
+from supervisor_mgr import supervisor
+
+# The only one item you should specify.
+CONFIG_PATH = 'etc/supervisord.conf'
+
+if __name__ == '__main__':
+    supervisor(CONFIG_PATH)

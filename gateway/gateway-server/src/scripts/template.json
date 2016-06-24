@@ -1,0 +1,23 @@
+{
+	"scheme":"https",
+	"host":"115.29.36.65",
+	"port":443,
+	"key":"this-is-TMP-apikey",
+	"X-Progress": "10",
+        "X-Client-ID": "client_id123456",
+        "X-File-Name": "qa_test",
+        "X-File-Size": "123456",
+        "X-Mime-Type": "video/mp4",
+        "hash": "[hash]",
+        "digest": "018e206e00bdc68374ff32bb0245d98ea703090e",
+        "digest-algorithm": "sha1",
+        "method": "GET",
+        "url": "http://115.29.36.65/clips/youku_28.flv",
+        "seed_file":"",
+        "seed_encoded":"true",
+        "result":
+        {
+            "status_code":200,
+            "error": {"message": "APIKEY Error", "code": 262145, "data": ["key"]}
+        }
+}

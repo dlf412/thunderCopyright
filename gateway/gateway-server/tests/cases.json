@@ -1,0 +1,40 @@
+[
+    {
+        "method": "GET",
+        "url": "http://115.29.36.65/clips/test3.mp3"
+    },
+    {
+        "method": "GET",
+        "url": "http://115.29.36.65/clips/youku_28.flv"
+    },
+    {
+        "method": "GET",
+        "url": "http://115.29.36.65/clips/5.mp4"
+    },
+    {
+        "method": "GET",
+        "url": "http://115.29.36.65/clips2/Frozen.zip"
+    },
+    {
+        "method": "GET",
+        "url": "http://115.29.36.65/clips2/Frozen.flv"
+    },
+    {
+        "method": "GET",
+        "url": "thunder://QUFlZDJrOi8vfGZpbGV8JUU2JTlEJTgzJUU1JThBJTlCJUU3JTlBJTg0JUU2JUI4JUI4JUU2JTg4JThGLkdhbWUub2YuVGhyb25lcy5TMDRFMTAuRW5kLiVFNCVCOCVBRCVFOCU4QiVCMSVFNSVBRCU5NyVFNSVCOSU5NS5IRFRWcmlwLjYyNFgzNTIubXA0fDMxOTcxNzEwNXwxMjJhZmZiZTExYjFiNjkzOGQ1MWUwNzMxNjc3NTRhMnxoPWhjNmZibm9oZm9hdXgzc2trcXh5emp4dXNvaDVhdXR3fC9aWg=="
+    },
+    {
+        "method": "GET",
+        "url": "magnet:?xt=urn:btih:936a11a4b40f588e5d51d1f1530aa5ba9a7b3e96&tr.0=http://tracker.openbittorrent.com/announce&tr.1=udp://tracker.openbittorrent.com:80/announce&tr.2=http://tracker.thepiratebay.org/announce&tr.3=http://tracker.publicbt.com/announce&tr.4=http://tracker.prq.to/announce&tr.5=http://torrent-download.to:5869/announcev"
+    },
+    {
+        "method": "GET",
+        "url": "ed2k://|file|冰与火之歌.权力的游戏.历史与传说之怒火燎原.史塔克家族.History.and.Lore.The.Field.of.Fire.House.Stark.Chi_Eng.BDRip.720X400-YYeTs人人影视.mp4|9194152|dc6454510f631eacb1f13594252ab857|h=vhjnx6cveoqtmcpdl57qorytgrklzqnw|/"
+    },
+    {
+        "method": "POST",
+        "file-name":"test.torrent",
+        "digest": "0580bd7f4abc33f5353fc37a2919049eec2c7c6d"
+    }
+]
+

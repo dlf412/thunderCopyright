@@ -1,0 +1,16 @@
+{
+    "jsonrpc": "2.0",
+    "id": 1,
+    "method": "submit_task",
+    "params": {
+        "percentage": 0,
+        "url": {
+            "location": "http://192.168.1.246:80/evidence_file_dir/media/2014-07-11/youku/ky/XNTk3NTIzOTky.flv",
+            "hash": "HFGHEWAABCDEFG"
+        },
+        "thunder_hash": "3333HFGHEWR9F3HR0",
+        "mime_type": "video/mp4",
+        "client_id": "1223345",
+        "protocol": "http"
+    }
+}

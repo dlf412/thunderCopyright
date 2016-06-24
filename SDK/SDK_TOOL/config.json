@@ -1,0 +1,23 @@
+{
+   "loop_count":"1",
+   "end_loop_finish":"0",
+   "proxy_type":"0",
+   "host":"192.168.3.44",
+   "port":1080,
+   "username":"user",
+   "password":"123",
+   "api_key":"this-is-TMP-apikey",
+   "client":"1234",
+   "program_info":"thunder1.0",
+   "params":
+   [
+     {
+        "url":"magnet:?xt=urn:btih:780F57768F1AA32E141965F7F96F4B0F0AF4DE7C",
+        "referer":"",
+	"file_name":"fsadfs",
+	"file_size":"489918783",
+     },
+
+   ]
+
+}

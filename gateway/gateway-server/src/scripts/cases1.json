@@ -1,0 +1,34 @@
+[
+    {
+        "method": "GET",
+        "key":"None",
+        "url": "ed2k://|file|冰与火之歌.权力的游戏.历史与传说之怒火燎原.史塔克家族.History.and.Lore.The.Field.of.Fire.House.Stark.Chi_Eng.BDRip.720X400-YYeTs人人影视.mp4|9194152|dc6454510f631eacb1f13594252ab857|h=vhjnx6cveoqtmcpdl57qorytgrklzqnw|/",
+        "result":
+        {
+            "status_code":401,
+            "info": {"jsonrpc": "2.0", "id": null, "error": {"message": "APIKEY Error", "code": 65539, "data": ["key"]}}
+        }
+    },
+    {
+        "method": "GET",
+        "url": "http://115.29.36.65/clips/5.mp4",
+ 	"result":
+        {
+            "status_code":200,
+	    "info": {"jsonrpc": "2.0", "id": -1, "result": {"is_copyrighted": false}}
+
+        }
+    },
+    {
+        "method": "GET",
+        "url": "http://115.29.36.65/clips2/Frozen.zip",
+ 	"result":
+        {
+            "status_code":200,
+	    "info": {"jsonrpc": "2.0", "id": -1, "result": {"is_copyrighted": true}}
+
+        }
+    }
+
+]
+

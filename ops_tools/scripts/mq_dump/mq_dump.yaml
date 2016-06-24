@@ -1,0 +1,18 @@
+
+# MQ 信息
+task-mq:
+  url         : amqp://guest:guest@127.0.0.1:5672//
+  routing-key : download_task_high
+  exchange    : download_task
+  queue       : download_task_high
+  type        : direct
+
+
+# 需要 dump 的字段
+dump-fields:
+  - external_id
+  - [additional_info, client_id]
+  - thunder_hash
+  - digest
+  - [url, location]
+  - file_name
