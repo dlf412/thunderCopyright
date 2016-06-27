@@ -1,5 +1,5 @@
 import json
-from mediawise import *
+from mysystem import *
 from utils import trans2json
 import pull_global_vars as gv
 from pull_util import *
@@ -84,10 +84,10 @@ def query_vddb_async(req_hash, data):
 
     g_logger.debug(trans2json("query vddb async by hash %s" % str(req_hash)))
 
-    mediawise = MediaWise(gv.mediawise_user, gv.mediawise_passwd,
-                          gv.mediawise_url, False, MEDIA_REQ_TIMEOUT, g_logger)
+    mysystem = mysystem(gv.mysystem_user, gv.mysystem_passwd,
+                          gv.mysystem_url, False, MEDIA_REQ_TIMEOUT, g_logger)
     uuid = data['params']['external_id']
-    ret, status_listing = mediawise.query(req_hash, uuid)
+    ret, status_listing = mysystem.query(req_hash, uuid)
 
     working_cnt = 0
     copyrighted_cnt = 0

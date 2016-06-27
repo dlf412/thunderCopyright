@@ -76,10 +76,10 @@ st_key = ''
 swith_path = "./"
 
 # vddb async
-mediawise_url = 'http://192.168.1.34/service/mediawise'
-mediawise_host = "192.168.1.34"
-mediawise_user = 'test2'
-mediawise_passwd = '123456'
+mysystem_url = 'http://192.168.1.34/service/mysystem'
+mysystem_host = "192.168.1.34"
+mysystem_user = 'test2'
+mysystem_passwd = '123456'
 meidawise_port = 8081
 
 

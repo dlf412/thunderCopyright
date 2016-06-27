@@ -15,14 +15,14 @@ import web
 
    Usage:
    ======
-     gunicorn -D -p /tmp/mediawise.pid -k gevent -w 16 --worker-connections=1000 -b 0.0.0.0:8081 fake_mediawise:app
+     gunicorn -D -p /tmp/mysystem.pid -k gevent -w 16 --worker-connections=1000 -b 0.0.0.0:8081 fake_mysystem:app
 
 """
 
 
 rand = random.Random()
 
-class MediaWiseServer(object):
+class mysystemServer(object):
     
     def GET(self):
         params = web.input()
@@ -90,7 +90,7 @@ class MediaWiseServer(object):
 
 
 urls = (
-    '/service/mediawise', 'MediaWiseServer'
+    '/service/mysystem', 'mysystemServer'
 )
 
 app = web.application(urls, globals())

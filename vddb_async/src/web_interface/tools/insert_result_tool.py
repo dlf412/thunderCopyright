@@ -51,7 +51,7 @@ class ParamsError(Exception): pass
 
 class Hash(object):
     """
-    ::Reference: http://seals.vobile.cn/trac/vdna/wiki/vobile_thunder/thunder_hash
+    ::Reference: http://seals.mysite.cn/trac/vdna/wiki/mysite_thunder/thunder_hash
 
     Usage:
     ======

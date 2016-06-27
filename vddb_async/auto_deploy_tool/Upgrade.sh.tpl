@@ -27,7 +27,7 @@ done
 [ -z $global_conf ] && echo "please specify the config file" && print_usage && exit 1
 [ ! -e $global_conf ] && echo "$global_conf not found" && exit 1;
 
-project="mediawise";
+project="mysystem";
 old_version="2.9.0";
 new_version="2.9.1";
 module="[module_name]";

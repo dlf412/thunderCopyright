@@ -1,5 +1,5 @@
 #!/bin/bash
-# by Honghui Ding <ding_honghui@vobile.cn>
+# by Honghui Ding <ding_honghui@mysite.cn>
 # Wed, 01 Aug 2012 11:32:41 +0000
 #
 # Usage: ./check_deps.sh dependence_file

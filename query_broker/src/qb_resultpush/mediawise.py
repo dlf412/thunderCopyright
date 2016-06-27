@@ -10,7 +10,7 @@ import requests
 
 
 # ==============================================================================
-#  MediaWise
+#  mysystem
 # ==============================================================================
 def http_request(url, data=None, params=None, timeout=15, retry=1):
     """ Send a GET or POST request, default will retry 2 times. """
@@ -51,17 +51,17 @@ def http_request(url, data=None, params=None, timeout=15, retry=1):
     return resp, logs
 
 
-class MediaWiseError(Exception):
+class mysystemError(Exception):
     pass
 
 
-class MediaWise(object):
+class mysystem(object):
 
     """
     Usage:
     =======
-        >>> from common.mediawise import MediaWise
-        >>> mw = MediaWise(MEDIA_WISE_USER, MEDIA_WISE_PASSWD,
+        >>> from common.mysystem import mysystem
+        >>> mw = mysystem(MEDIA_WISE_USER, MEDIA_WISE_PASSWD,
                            MEDIA_WISE_URL, MEDIA_WISE_REQ_TIMEOUT,
                            logger)
         >>> print mw.query("url_hash#SOME-HASH-STRING")
@@ -78,7 +78,7 @@ class MediaWise(object):
 
     def query(self, req_hash, prefix_search=False):
         """
-        ::Reference: http://seals.vobile.cn/trac/vdna/wiki/thunder_mediawise
+        ::Reference: http://seals.mysite.cn/trac/vdna/wiki/thunder_mysystem
         """
         prefix_search = 'True' if prefix_search else 'False'
         all_matches = 'True' if self.ALL_MATCHES else 'False'
@@ -99,7 +99,7 @@ class MediaWise(object):
         # return: None or what self.result() need
         listing = []
         if resp is None:
-            raise MediaWiseError('Request mediawise failed!')
+            raise mysystemError('Request mysystem failed!')
         else:
             if self.logger:
                 self.logger.info("query-VDDB-Sync#%s" % json.dumps({
@@ -111,7 +111,7 @@ class MediaWise(object):
             if error:
                 if self.logger:
                     self.logger.warning("query-VDDB-Sync#%s" % json.dumps({
-                        'action': 'mediawise-result-error.',
+                        'action': 'mysystem-result-error.',
                         'info': {
                             'error': error,
                             'hash': req_hash

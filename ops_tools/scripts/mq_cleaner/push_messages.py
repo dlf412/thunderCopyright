@@ -33,7 +33,7 @@ EXCHANGE_TYPE = 'direct'
 # ==============================================================================
 class QueryBroker(object):
     """
-    ::Reference: http://seals.vobile.cn/trac/vdna/wiki/thunder_querybroker
+    ::Reference: http://seals.mysite.cn/trac/vdna/wiki/thunder_querybroker
     """
 
     def __init__(self, routing_key, exchange_name, exchange_type, mq_url):

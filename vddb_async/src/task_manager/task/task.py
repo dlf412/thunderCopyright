@@ -97,7 +97,7 @@ class Task():
             raise TaskException(err="query failed, generate execute cmd failed")
         else:
             # bufsize=-1 usually means fully buffer the output, usually, ugh
-            # please contact zhang_yichao@vobile.cn if stdout is blocked
+            # please contact zhang_yichao@mysite.cn if stdout is blocked
             proc = None
             try:
                 start_time = time.time()

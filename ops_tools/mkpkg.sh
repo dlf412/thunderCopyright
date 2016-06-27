@@ -1,8 +1,8 @@
 #!/bin/bash
-# Written by Junwei Sun< sun_junwei@vobile.cn>
+# Written by Junwei Sun< sun_junwei@mysite.cn>
 # 2008-11
 #
-# Qian LinFeng<qian_linfeng@vobile.cn>
+# Qian LinFeng<qian_linfeng@mysite.cn>
 # Init:   [2014-08-08 11:11]
 # Update: [2014-08-27 16:07]
 

@@ -32,7 +32,7 @@ done
 
 [ -z $INST_DIR ] && echo "please specify the install dir" && print_usage && exit 1
 [ -z $MW_USER ] && MW_USER="media_wise" && echo "[Note] default MW_USER media_wise is used"
-[ $MW_USER != "media_wise" -a $MW_USER != "mediawise" ] && echo "[Err] MW_USER must be media_wise or mediawise" && exit 1
+[ $MW_USER != "media_wise" -a $MW_USER != "mysystem" ] && echo "[Err] MW_USER must be media_wise or mysystem" && exit 1
 
 DEST_DIR="$INST_DIR/server"
 

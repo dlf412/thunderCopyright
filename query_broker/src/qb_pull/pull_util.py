@@ -329,6 +329,6 @@ def post_to_vddbdnaerror(data, code, dna_hash):
     if dna_hash != '':
         message['params']['site_asset_id'].append(dna_hash)
     header = {"Content-Type": "application/json"}
-    conn = httplib.HTTPConnection(gv.mediawise_host, int(gv.mediawise_port))
+    conn = httplib.HTTPConnection(gv.mysystem_host, int(gv.mysystem_port))
     g_logger_info.info(trans2json("post %s  to  vddb-async matches" % message))
     conn.request('POST', "/vddb-async/matches?source=auto_match", json.dumps(message), header)

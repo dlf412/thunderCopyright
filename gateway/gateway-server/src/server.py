@@ -2,8 +2,8 @@
 #coding: utf-8
 
 __author__ = (
-    'weet', 'qian_linfeng@vobile.cn'
-    'hxz','huang_xuezhong@vobile.cn'
+    'weet', 'qian_linfeng@mysite.cn'
+    'hxz','huang_xuezhong@mysite.cn'
 )
 
 """
@@ -31,7 +31,7 @@ import redis
 from common import dbpc
 from common import mylogger
 from common.utils import url_scheme
-from common.services import MediaWise
+from common.services import mysystem
 from services import QueryBroker
 from utils import (log_normal, log_bill, log_info,
                    LOG_DEBUG, LOG_INFO, LOG_WARN, LOG_WARNING, LOG_ERROR, LOG_CRITICAL)
@@ -333,7 +333,7 @@ class Query(object):
         ==========
         Parameter	 Type	 Required	Description
         --------------------------------------------------------
-        key		 String	 Y	 	apikey given by vobile.cn must keep it secret.
+        key		 String	 Y	 	apikey given by mysite.cn must keep it secret.
         hash		 String	 N	 	file_private_id (hash value generate by thunder client)
         digest		 String	 Y	 	The digest of url or seed-file
         digest-algorithm String	 Y	 	Digest algorithm
@@ -519,7 +519,7 @@ class Query(object):
           * Check params
           * Cheating Case
           * Decode `seed_file`
-          * Query MediaWise
+          * Query mysystem
           * Push query broker if error and has `url`
           * Return result
 
@@ -867,8 +867,8 @@ load_apikey()
 if not os.path.exists(PICKLE_DIR):
     os.mkdir(PICKLE_DIR)
 
-## Init QueryBroker and MediaWise
-mw = MediaWise(MEDIA_WISE_USER, MEDIA_WISE_PASSWD,
+## Init QueryBroker and mysystem
+mw = mysystem(MEDIA_WISE_USER, MEDIA_WISE_PASSWD,
                MEDIA_WISE_URL, MEDIA_WISE_ALL_MATCHES, MEDIA_WISE_REQ_TIMEOUT,
                logger)
 if not WORKING_AS_PASS:

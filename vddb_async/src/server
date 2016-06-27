@@ -54,7 +54,7 @@ case "$1" in
     do_start_stop "stop"
     ;;
   restart)
-    echo "Restarting MediaWise Server Daemons..."
+    echo "Restarting mysystem Server Daemons..."
     do_start_stop "stop"
     do_start_stop  "start"
     ;;

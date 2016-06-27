@@ -12,7 +12,7 @@ from rating_util import *
 from kombu import Exchange, Queue
 import traceback
 import sys
-from mediawise import http_request
+from mysystem import http_request
 
 
 class Worker(ConsumerMixin):

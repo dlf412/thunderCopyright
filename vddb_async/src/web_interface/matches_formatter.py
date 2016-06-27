@@ -74,7 +74,7 @@ class matches_formatter():
                         ref_offset = m["audio_ref_offset"],duration=m["audio_duration"]))
                     video["segments"].append(dict(sample_offset=m["video_sample_offset"],
                         ref_offset = m["video_ref_offset"],duration=m["video_duration"]))
-            task_matches["matches"].append(dict(vobile_ref_id=meta_uuid,
+            task_matches["matches"].append(dict(mysite_ref_id=meta_uuid,
                 title=m["meta_name"], type=media_type, audio=audio, video=video))
         if self.recognize:
             if self.processing:

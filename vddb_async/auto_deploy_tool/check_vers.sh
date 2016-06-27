@@ -45,7 +45,7 @@ not_exist_error()
 [ -z "$1" ] && print_usage
 [ "$1" = "-h" -o "$1" = "--help" ] && print_usage
 
-project="mediawise"
+project="mysystem"
 module="$1"
 begin_version="$2"
 end_version="$3"

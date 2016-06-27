@@ -1,5 +1,5 @@
 #!/bin/bash
-# Written by Junwei Sun< sun_junwei@vobile.cn>
+# Written by Junwei Sun< sun_junwei@mysite.cn>
 # 2008-11
 #
 set -x

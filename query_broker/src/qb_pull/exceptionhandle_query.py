@@ -89,11 +89,11 @@ def get_global_vars(cfg):
                       int(gv.interval))
 
     meidawise_cfg = cfg['vddbasync']
-    gv.mediawise_url = meidawise_cfg['url']
-    gv.mediawise_host = meidawise_cfg['host']
-    gv.mediawise_user = meidawise_cfg['user']
-    gv.mediawise_passwd = meidawise_cfg['passwd']
-    gv.mediawise_port = meidawise_cfg['port']
+    gv.mysystem_url = meidawise_cfg['url']
+    gv.mysystem_host = meidawise_cfg['host']
+    gv.mysystem_user = meidawise_cfg['user']
+    gv.mysystem_passwd = meidawise_cfg['passwd']
+    gv.mysystem_port = meidawise_cfg['port']
 
     gv.file_tmpdir = cfg['tmpdir']
 

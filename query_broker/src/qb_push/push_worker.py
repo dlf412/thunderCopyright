@@ -1,6 +1,6 @@
 from kombu.mixins import ConsumerMixin
 
-from mediawise import *
+from mysystem import *
 import push_global_vars as gv
 import uuid
 import time

@@ -1,5 +1,5 @@
 #!/bin/bash
-# Written by Junwei Sun< sun_junwei@vobile.cn>
+# Written by Junwei Sun< sun_junwei@mysite.cn>
 # 2009-02~2011-03
 # Universal build script to build all modules in all directories.
 #
@@ -52,7 +52,7 @@ else
 		echo "Skip login and checking tickets."
 	else 
 		# retrieve cookie
-		trac_cookie=`wget -d http://seals.vobile.cn/trac/$projName/login -O /dev/null \
+		trac_cookie=`wget -d http://seals.mysite.cn/trac/$projName/login -O /dev/null \
 		--post-data="__FORM_TOKEN=627bff2ee8f6e0589a8a0392&referer=&user=${trac_username}&password=${trac_password}" \
 		--header="Cookie: trac_form_token=627bff2ee8f6e0589a8a0392; trac_session=34f7c2c6e135a7bb8e1788c5" 2>&1 \
 		| grep Set-Cookie | sed "s/.*: //g"| sed "s/; .*//"| awk '{printf("%s;",$1);}' \
@@ -65,7 +65,7 @@ else
 		if [ "$projName" = "taisan" ] ; then
 			# 1. check if all fixed tickets included in changelog.
 			echo
-			ftQueryURL="http://seals.vobile.cn/trac/$projName/query?status=fixed&group=status&max=10&component=$component&order=changetime&col=id&col=summary&col=changetime&desc=1&resolution=fixed&update=Update";
+			ftQueryURL="http://seals.mysite.cn/trac/$projName/query?status=fixed&group=status&max=10&component=$component&order=changetime&col=id&col=summary&col=changetime&desc=1&resolution=fixed&update=Update";
 			#echo "Query URL: $ftQueryURL"
 			echo -n "Checking fixed tickets..."
 			>not_included_tickets
@@ -78,7 +78,7 @@ else
 						echo 
 						i="1"
 					fi
-					echo "http://seals.vobile.cn/trac/$projName/ticket/$l" |tee -a not_included_tickets
+					echo "http://seals.mysite.cn/trac/$projName/ticket/$l" |tee -a not_included_tickets
 				else 
 					echo -n "."
 				fi
@@ -144,7 +144,7 @@ if [ "$pkgtype" = "cc" ] ; then
 			fi; 
 			echo $l|sed "s/.*#//g"| sed "s/ .*//g";
 		done | egrep "[[:digit:]]" | while read l ; do 
-			tst=`wget --header="$trac_cookie" http://seals.vobile.cn/trac/$projName/ticket/$l -O - 2>/dev/null |\
+			tst=`wget --header="$trac_cookie" http://seals.mysite.cn/trac/$projName/ticket/$l -O - 2>/dev/null |\
 			grep "fixed)</span>"`; 
 			if [ "$tst" = "" ] ; then 
 				echo "	* Ticket #$l not fixed" | tee ./ticket_status
@@ -204,9 +204,9 @@ if [ $pkgtype = "er" ] ; then
 	if [ $subProjName = $projName ] ; then
 		subProjName=""
 	else 
-		echo "mkdir $subProjName"|sftp $dsl_username@seals.vobile.cn:projects/$projName/
+		echo "mkdir $subProjName"|sftp $dsl_username@seals.mysite.cn:projects/$projName/
 	fi
-	echo "mkdir ProjectRelease"|sftp $dsl_username@seals.vobile.cn:projects/$projName/$subProjName/
+	echo "mkdir ProjectRelease"|sftp $dsl_username@seals.mysite.cn:projects/$projName/$subProjName/
 	echo "\
 	mkdir ${APP_VERSION}
 	mkdir ${APP_VERSION}/$modDirDSL
@@ -221,8 +221,8 @@ if [ $pkgtype = "er" ] ; then
 	put $modDir/$tsupdateri ${APP_VERSION}/tsupdater_info/$tsupdateri
 	put $modDir/$tsupdateri.md5 ${APP_VERSION}/tsupdater_info/$tsupdateri.md5
 	put $modDir/$tsupdateri.md5.md5 ${APP_VERSION}/tsupdater_info/$tsupdateri.md5.md5
-	"|sftp $dsl_username@seals.vobile.cn:projects/$projName/$subProjName/ProjectRelease/
-	echo "Package uploaded@ http://seals.vobile.cn/share/$projName/files/$subProjName/ProjectRelease/${APP_VERSION}/$modDirDSL/$pkgname.tar.gz" | \
+	"|sftp $dsl_username@seals.mysite.cn:projects/$projName/$subProjName/ProjectRelease/
+	echo "Package uploaded@ http://seals.mysite.cn/share/$projName/files/$subProjName/ProjectRelease/${APP_VERSION}/$modDirDSL/$pkgname.tar.gz" | \
 		tee -a released_packages.txt
 	# 10.2 create ER Tag.
 	tagDst=`echo "$tagSrc"| sed "s/tags\/cc_/tags\/er_/g"`
@@ -298,7 +298,7 @@ if [ "$pkgtype" = "cc" ] ; then
 		releaseTime=`date "+%D %T"`
 		wget --header="$trac_cookie;trac_form_token=0999eae1e9c07432540dd6be;" \
 			--post-data="__FORM_TOKEN=0999eae1e9c07432540dd6be&name=${APP_VERSION}&time=$releaseTime&add=Add" \
-			http://seals.vobile.cn/trac/$projName/admin/ticket/versions -O /dev/null
+			http://seals.mysite.cn/trac/$projName/admin/ticket/versions -O /dev/null
 	fi
 	# 18. add svn tag into changelog.
 	if [ "$buildTag" != "" ] ; then

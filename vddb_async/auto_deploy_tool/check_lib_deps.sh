@@ -1,5 +1,5 @@
 #!/bin/bash
-# by Honghui Ding <ding_honghui@vobile.cn>
+# by Honghui Ding <ding_honghui@mysite.cn>
 # Wed, 29 Aug 2012 02:35:35 +0000
 #
 # Usage: ./check_lib_deps.sh manifest
@@ -7,7 +7,7 @@
 # input file example:
 # ===============================
 # bin/lsattr
-# /opt/vobile/utils/bin/getmail
+# /opt/mysite/utils/bin/getmail
 # ./lib/libm.so
 #================================
 #

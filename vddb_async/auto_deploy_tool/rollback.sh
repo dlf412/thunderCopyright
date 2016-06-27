@@ -58,7 +58,7 @@ echo_and_exec()
 [ -z "$1" ] && print_usage
 [ "$1" = "-h" -o "$1" = "--help" ] && print_usage
 
-project="mediawise"
+project="mysystem"
 module="$1"
 install_dir="/opt/media_wise"
 [ -n "$2" ] && install_dir="$2"

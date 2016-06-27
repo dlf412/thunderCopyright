@@ -19,7 +19,7 @@ class QueryBrokerError(Exception): pass
 # ==============================================================================
 class QueryBroker(object):
     """
-    ::Reference: http://seals.vobile.cn/trac/vdna/wiki/thunder_querybroker
+    ::Reference: http://seals.mysite.cn/trac/vdna/wiki/thunder_querybroker
     """
 
     def __init__(self, logger, routing_key, exchange_name, publish_timeout, mq_url):

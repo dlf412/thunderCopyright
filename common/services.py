@@ -21,7 +21,7 @@ OVERALL_ALL_UNDETECTED = 2
 OVERALL_UNDETECTED_UNCOPYRIGHTED = 1
 
 # ==============================================================================
-#  MediaWise
+#  mysystem
 # ==============================================================================
 def http_request(url, data=None, params=None, timeout=15, retry=1):
     """ Send a GET or POST request, default will retry 2 times. """
@@ -61,13 +61,13 @@ def http_request(url, data=None, params=None, timeout=15, retry=1):
     return resp, logs
 
     
-class MediaWiseError(Exception): pass
-class MediaWise(object):
+class mysystemError(Exception): pass
+class mysystem(object):
     """
     Usage:
     =======
-        >>> from common.mediawise import MediaWise
-        >>> mw = MediaWise(MEDIA_WISE_USER, MEDIA_WISE_PASSWD,
+        >>> from common.mysystem import mysystem
+        >>> mw = mysystem(MEDIA_WISE_USER, MEDIA_WISE_PASSWD,
                            MEDIA_WISE_URL, MEDIA_WISE_REQ_TIMEOUT,
                            logger)
         >>> print mw.query("url_hash#SOME-HASH-STRING")
@@ -85,7 +85,7 @@ class MediaWise(object):
 
     def query(self, req_hash, uuid=None):
         """
-        ::Reference: http://seals.vobile.cn/trac/vdna/wiki/thunder_result_management
+        ::Reference: http://seals.mysite.cn/trac/vdna/wiki/thunder_result_management
         """
         all_matches = 'True' if self.ALL_MATCHES else 'False'
         params = {
@@ -101,7 +101,7 @@ class MediaWise(object):
                 _logger("query-vddb-async#%s" % json.dumps(log))
 
         if resp is None:
-            raise  MediaWiseError('Request mediawise failed!')
+            raise  mysystemError('Request mysystem failed!')
 
         # return: None or what self.result() need
         listing = []
@@ -122,7 +122,7 @@ class MediaWise(object):
         if error:
             if self.logger:
                 self.logger.warning("query-vddb-async#%s" % json.dumps({
-                    'action': 'mediawise-result-error.',
+                    'action': 'mysystem-result-error.',
                     'uuid': uuid,
                     'info': {
                         'error': error,
@@ -200,7 +200,7 @@ class MediaWise(object):
         
         if self.logger:
             self.logger.info("query-vddb-async#%s" % json.dumps({
-                'action': 'mediawise-result-summary',
+                'action': 'mysystem-result-summary',
                 'uuid': uuid,
                 'info': {
                     'only1_status': only1_status,

@@ -179,7 +179,7 @@
     },
     "vddb_async": {
         "mysql": {
-            "media_wise": "mysql://mediawise:123@10.162.207.221:3306/mediawise"
+            "media_wise": "mysql://mysystem:123@10.162.207.221:3306/mysystem"
         },
         "celery": {
             "backend": "redis://10.162.207.221",

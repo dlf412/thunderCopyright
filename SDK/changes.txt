@@ -1,4 +1,4 @@
-http://seals.vobile.cn/trac/vdna/wiki/vobile_thunder/sdk_release
+http://seals.mysite.cn/trac/vdna/wiki/mysite_thunder/sdk_release
 
 17. b17 -- r77193:
     * log 添加了环境变量 VCRI_LOG_LEVEL, 默认log level只打印 ERROR；
@@ -58,7 +58,7 @@ http://seals.vobile.cn/trac/vdna/wiki/vobile_thunder/sdk_release
 
  4. b4 -- r75934: 发给迅雷的测试版sdk工具，vcri.dll库在winxp、win7、win vista、win8、win8.1下能被调用、正常运行。
 
- 3. b3 -- r75912: 修复部分bug，去掉vobile标识
+ 3. b3 -- r75912: 修复部分bug，去掉mysite标识
 
  2. b2 -- r75859: release版本，修复上版release崩溃的bug，新增测试脚本
 

@@ -22,7 +22,7 @@ class meta(object):
     def auth(self):
         request = {"protocols":["5.1"], "user":self.user,
                    "password":self.password}
-        self.conn.request ('POST', '/mediawise/auth', json.dumps(request))
+        self.conn.request ('POST', '/mysystem/auth', json.dumps(request))
         response = self.conn.getresponse()
         response.read()
         if response.status == 200:
@@ -35,7 +35,7 @@ class meta(object):
         token = self.auth()
         header =  {'Content-type':'application/x-www-form-urlencoded',
                    'Cookie':token}
-        self.conn.request("GET", '/mediawise/contents/%s/meta' %
+        self.conn.request("GET", '/mysystem/contents/%s/meta' %
                           self.meta_uuid, None, header)
         response = self.conn.getresponse()
         results = response.read()

@@ -10,7 +10,7 @@ from result_util import *
 from kombu import Exchange, Queue
 import base64
 import traceback
-from mediawise import http_request
+from mysystem import http_request
 import urllib
 
 

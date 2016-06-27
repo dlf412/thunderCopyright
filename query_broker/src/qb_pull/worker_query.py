@@ -13,7 +13,7 @@ from pull_query import *
 from pull_util import *
 import traceback
 from kombu import Exchange, Queue
-#from mediawise import submittask
+#from mysystem import submittask
 import httplib
 import urllib
 from redis_oper import *
